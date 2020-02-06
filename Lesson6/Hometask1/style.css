@@ -21,3 +21,7 @@
   [data-description*="even"] {
       font-size: 24px;
   }
+  
+  span[lang|="en"] {
+      font-size: 28px;
+  }
