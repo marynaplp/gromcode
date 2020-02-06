@@ -1,9 +1,9 @@
-section.already-learned ol li {
+section.already-learned ol {
     background-color: green;
     color: white;
 }
 
-section.to-be-learned ol li {
+section.to-be-learned ol {
     background-color: orange;
     color: green;
 }
