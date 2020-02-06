@@ -1,0 +1,17 @@
+section.already-learned ol li {
+    background-color: green;
+    color: white;
+}
+
+section.to-be-learned ol li {
+    background-color: orange;
+    color: green;
+}
+
+section.already-learned code {
+    background-color: orange;
+}
+
+section.to-be-learned code {
+    background-color: green;
+}
