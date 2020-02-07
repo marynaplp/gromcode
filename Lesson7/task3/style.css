@@ -10,7 +10,7 @@
 
 .theory::selection {
     background-color: red;
-    color: white:
+    color: white;
 }
 
 a::before {
