@@ -1,4 +1,4 @@
-.confirm-checkbox :checked {
+ul :checked {
     margin-left: 50px;
 }
 
@@ -6,13 +6,13 @@ label {
     text-transform: uppercase;
 }
 
-#special ::first-letter {
+#special::first-letter {
     color: green;
     font-size: 100px;
 }
 
 h1:hover {
-    background-color: blue;
+    color: blue;
 }
 
 a:visited {
