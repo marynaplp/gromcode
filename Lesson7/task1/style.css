@@ -1,34 +1,57 @@
-a:link {
+/* не посещенная сссылка должна быть с белым текстом на черном фоне*/
+
+:active:link {
     background-color: black;
     color: white;
 }
+
+
+/*Посещенная ссылка должна быть с зеленным текстом на оранжевом фоне*/
 
 a:visited {
     background-color: orange;
     color: green;
 }
 
+
+/*Кнопка и ссылка при нажатии должны иметь красную границу*/
+
 a:active,
 .some-button:active {
     border: 3px solid red;
 }
 
+
+/*Ссылки при наведении должна увеличивать размер шрифта до 24px*/
+
 a:hover {
     font-size: 24px;
 }
 
+
+/*Disable кнопка должна иметь серую границу и не реагировать на hover*/
+
 button[disabled] {
     border: 2px dashed grey;
 }
+
+
+/*Enable кнопка должна иметь белый цвет и серый фон при наведении */
 
 .some-button:hover:enabled {
     background-color: grey;
     color: white;
 }
 
+
+/*Инпут в фокусе должен иметь оранжевый фон */
+
 .search:focus {
     background-color: orange;
 }
+
+
+/*Отмеченный чекбокс должен иметь отступ  иметь отступ слева 20px*/
 
 .confirm-checkbox:checked {
     margin-left: 20px;
