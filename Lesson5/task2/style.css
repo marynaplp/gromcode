@@ -1,14 +1,25 @@
+/* Задайте всем елементам атриьута data-description anchors серый цвет*/
+
 [data-description="anchors"] {
     background-color: grey;
 }
+
+
+/*Задайте всем елементам у который есть атрибут data-description paзмер шрифта 24px */
 
 [data-description] {
     font-size: 24px;
 }
 
+
+/* Задайте элементу <a>, у которого есть оба фтрибута href  и target зеленый цвет*/
+
 [href][target] {
     color: green;
 }
+
+
+/*Задайте эллементу <input>с атрибутои type равный text orange цвет фона */
 
 [type="text"] {
     background-color: orange;
