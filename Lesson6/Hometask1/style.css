@@ -1,26 +1,34 @@
-  img[alt="Pollution"] {
+  /*установите границы для картинок у которых атрибут  alt равен Pollution */
+  
+   :active[alt="Pollution"] {
       border: 5px dashed red;
   }
+  /*установите отступ слева 50px для картинок с разширением .jpg*/
   
   img[src$=".jpg"] {
       margin-left: 50px;
   }
+  /*Задайте зеленый цвет всем ссылкам адрес которых начинается на https//*/
   
   a[href^="https://"] {
       color: green;
   }
+  /*Задайте размер шрифта 28 px всем элементам <span> которым установлен английский язык*/
   
   a [lang|="en"] {
       font-size: 28px;
   }
+  /*Установите серый фон элементов списка, у которыx атрибут data-description содержит целое слово(через пробел) even */
   
   [data-description~="even"] {
       background-color: grey;
   }
+  /*Устанвите размер шрифта 24px элементам списка у которых значение атрубута data-description имеет вхождение строки even */
   
   [data-description*="even"] {
       font-size: 24px;
   }
+  /* Задайте размер шрифта 28px всем елементам <span> которым установлен английский язык*/
   
   span[lang|="en"] {
       font-size: 28px;
