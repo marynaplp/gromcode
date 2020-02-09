@@ -1,16 +1,27 @@
+/*Задайте зеленый цвет текста всем ссылкам у которых атрибут target равен _blank */
+
 [target="_blank"] {
     color: green
 }
+
+
+/*Задайте всем спискам желтый фон */
 
 ul,
 ol {
     background-color: yellow;
 }
 
+
+/* Футеру и хедеру задайте синюю пунктирную рамку*/
+
 footer,
 header {
     border: 3px dashed blue;
 }
+
+
+/*Задайте всем заголовкам отступ слева 20px*/
 
 h1,
 h2,
@@ -19,13 +30,22 @@ h4 {
     margin-left: 20px;
 }
 
+
+/*Задайте всем  новым статьям <article> с классом new font-size:24px. */
+
 article.new {
     font-size: 24px;
 }
 
+
+/*новым топикам <li> с классом new установите красным фон */
+
 li.topic.new {
     background-color: red;
 }
+
+
+/*Почеркните новую сегоднишнюю тему (есть оба класса new и posted-today) розовый фоном (pink) */
 
 .new.posted-today {
     background-color: pink;
