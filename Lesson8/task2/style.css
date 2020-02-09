@@ -3,8 +3,8 @@
 }
 
 .rectangle {
-    width: 420px;
-    height: 140px;
+    width: 400px;
+    height: 200px;
     background-color: bisque;
     border-width: 10px 20px 10px 20px;
     border-style: solid solid dashed dashed;
