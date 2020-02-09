@@ -1,50 +1,88 @@
+/*Give the <body> element a background of #bdc3c7 */
+
 body {
     background-color: #bdc3c7
 }
+
+
+/*Make text of <h1> element #9b59b6*/
 
 h1 {
     color: #9b59b6;
 }
 
+
+/*Make text of all <h2> elements orange */
+
 h2 {
     color: orange;
 }
+
+
+/*Make all <li> elements blue*/
 
 li {
     color: blue;
 }
 
+
+/*Change the background on every paragraph to bу yellow */
+
 p {
     background-color: yellow;
 }
+
+
+/*Make all inputs have a 3px solid red border */
 
 input {
     border: 3px solid red;
 }
 
+
+/* Give everything with the class "hello " a white background  */
+
 .hello {
     background-color: white;
 }
+
+
+/*Give the element with the id "special" a 2px solid blue border*/
 
 #special {
     border: 2px solid blue;
 }
 
+
+/*Make all the <p> that are nested inside of divs 25px font*/
+
 div p {
     font-size: 25px;
 }
+
+
+/*Make only inputs with type "text" have a gray background*/
 
 input[type="text"] {
     background-color: gray;
 }
 
+
+/*Give both <p> inside the 3rd <div> a yellow background*/
+
 div p:nth-of-type(3) {
     background-color: yellow;
 }
 
+
+/*Give the 2nd <p> inside the 3rd <div> a 5px white border*/
+
 div p:nth-of-type(2) {
     border: 5px solid white;
 }
+
+
+/*Make the <em> in the 3rd <div> element white and 20px font*/
 
 div em {
     color: white;
