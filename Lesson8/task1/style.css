@@ -1,5 +1,9 @@
 /*Используйте CSS классы и  выносите повторяющий код в отдельный класс*/
 
+body {
+    background-image: antiquewhite;
+}
+
 .rectangle {
     border: 8px solid black;
     width: 512px;
@@ -9,7 +13,7 @@
 }
 
 .rectangle1 {
-    background-color: antiquewhite;
+    background-color: aquamarine;
     box-sizing: content-box;
 }
 
