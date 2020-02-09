@@ -1,24 +1,41 @@
+/*Задайте <span> в первом <li> красный фон и белый фон   */
+
 ul>li:first-child>span {
     background-color: red;
     color: white;
 }
+
+
+/*Задайте  <span> в последнем <li> черный фон и белый шрифт*/
 
 li:last-child>span {
     background-color: black;
     color: white;
 }
 
+
+/*Задайте всем <li> отступ снизу 16px */
+
 li {
     margin-bottom: 16px;
 }
+
+
+/*Задайте отступ слева 16px четным элементам списка <li> */
 
 li:nth-child(even)>span {
     margin-left: 16px;
 }
 
+
+/*Задайте серый фон нечетным элементам списка параграфам внутри*/
+
 p:nth-child(1) {
     background-color: grey;
 }
+
+
+/*Задайте серый фон нечетным элементам списка параграфам внутри*/
 
 p:nth-child(4) {
     background-color: grey;
