@@ -1,19 +1,33 @@
+/*Make all "checked " checkboxes have a left margin of 50px*/
+
 ul :checked {
     margin-left: 50px;
 }
 
+
+/*Make the <labe> elements all UPPERCASE without changing the HTML*/
+
 label {
     text-transform: uppercase;
 }
+
+
+/*Make the <h1> element's color change to blue when hovered over*/
 
 #special::first-letter {
     color: green;
     font-size: 100px;
 }
 
+
+/*Make the <h1> element's color change to blue when hovered over  */
+
 h1:hover {
     color: blue;
 }
+
+
+/*Make the <a> element's that have been visited gray*/
 
 a:visited {
     background-color: gray;
