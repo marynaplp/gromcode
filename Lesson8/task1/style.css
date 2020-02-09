@@ -1,7 +1,7 @@
 /*Используйте CSS классы и  выносите повторяющий код в отдельный класс*/
 
 body {
-    background-image: antiquewhite;
+    background-color: #faebd7;
 }
 
 .rectangle {
