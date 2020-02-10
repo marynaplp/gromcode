@@ -2,25 +2,25 @@ div {
     border: 2px solid black;
 }
 
-.rectangle1 {
+.PinkBox {
     margin: 25px;
     padding: 50px;
     background-color: pink;
 }
 
-.rectangle2 {
+.GreenBox {
     margin: 25px;
     padding: 25px;
     background-color: green;
 }
 
-.rectangle3 {
+.YellowBox {
     margin: 25px;
     padding: 25px;
     background-color: yellow;
 }
 
-.rectangle4 {
+.BlueBox {
     margin: 50px;
     padding: 25px;
     background-color: blue;
