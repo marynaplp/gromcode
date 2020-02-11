@@ -29,4 +29,6 @@ div {
 
 .block_black {
     background-color: black;
+    float: left;
+    width: 20%;
 }
