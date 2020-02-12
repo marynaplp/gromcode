@@ -9,8 +9,9 @@ header.nav-list {
 }
 
 li.nav-item {
-    padding-left: 16px;
-    padding-top: 10px;
+    margin-left: 16px;
+    text-align: center;
+    line-height: 40px;
     color: white;
     float: left;
     list-style-type: none;
@@ -30,30 +31,23 @@ main {
     right: 45%;
 }
 
-.eye {
-    position: relative;
-}
-
 .eye_right {
-    width: 30px;
+    position: absolute;
+    margin-left: 20%;
     height: 30px;
+    margin-top: 80px;
     border-radius: 50%;
     background-color: grey;
-    top: 80px;
-    left: 0px;
-    right: 40px;
-    float: right;
 }
 
 .eye_left {
-    width: 30px;
+    position: absolute;
+    float: right;
+    margin-left: 65%;
     height: 30px;
+    margin-top: 80px;
     border-radius: 50%;
     background-color: grey;
-    top: 80px;
-    left: 10px;
-    right: 40px;
-    float: left;
 }
 
 .ear {
@@ -61,16 +55,17 @@ main {
     width: 40px;
     height: 60px;
     background-color: brown;
+    bottom: 60px;
 }
 
 .ear_right {
-    bottom: 60px;
+    position: relative;
     float: right;
     left: 40px;
 }
 
 .ear_left {
-    bottom: 60px;
+    position: relative;
     float: left;
     right: 40px;
 }
