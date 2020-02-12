@@ -6,6 +6,7 @@
 header.nav-list {
     height: 40px;
     position: absolute;
+    position: fixed;
 }
 
 li.nav-item {
