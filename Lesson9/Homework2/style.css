@@ -11,7 +11,7 @@
     margin: 0;
 }
 
-.nav-item {
+li.nav-item {
     display: inline-block;
     color: white;
     margin-left: 16px;
@@ -27,11 +27,11 @@ main {
 .head {
     width: 200px;
     height: 200px;
+    z-index: 1;
     background-color: aquamarine;
     position: absolute;
     top: calc(50% - 100px);
     left: calc(50% - 100px);
-    z-index: 1;
 }
 
 .ear {
