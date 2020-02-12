@@ -1,21 +1,15 @@
 .header {
     background-color: darkturquoise;
     height: 40px;
-}
-
-header.nav-list {
-    height: 40px;
-    position: absolute;
     position: fixed;
+    width: 100%;
 }
 
 li.nav-item {
-    margin-left: 16px;
-    text-align: center;
-    line-height: 40px;
     color: white;
     float: left;
     list-style-type: none;
+    margin-left: 16px;
 }
 
 main {
@@ -28,28 +22,13 @@ main {
     height: 200px;
     background-color: aquamarine;
     position: absolute;
-    top: 40%;
-    right: 45%;
+    top: 50%;
+    right: 50%;
 }
 
-.eye_right {
-    position: absolute;
-    margin-left: 20%;
-    height: 30px;
-    margin-top: 80px;
-    border-radius: 50%;
-    background-color: grey;
-}
+.eye_right {}
 
-.eye_left {
-    position: absolute;
-    float: right;
-    margin-left: 65%;
-    height: 30px;
-    margin-top: 80px;
-    border-radius: 50%;
-    background-color: grey;
-}
+.eye_left {}
 
 .ear {
     position: relative;
