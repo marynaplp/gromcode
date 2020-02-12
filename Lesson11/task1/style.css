@@ -1,10 +1,10 @@
-div {
+div>div {
     width: 100px;
     height: 100px;
     background: coral;
 }
 
-div:nth-child(1) {
+.container div:nth-child(1) {
     display: none;
 }
 
