@@ -11,6 +11,10 @@
     display: flex;
 }
 
+.footer__text {
+    margin: auto;
+}
+
 .navigation {
     margin: 0;
     display: flex;
@@ -21,14 +25,10 @@
     margin-right: 16px;
 }
 
-.footer__text {
-    margin: auto;
-}
-
 .page {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vw;
 }
 
 .content {
@@ -47,15 +47,15 @@
 .news {
     width: 200px;
     background-color: grey;
-    list-style-type: none;
-    line-height: 40px;
 }
 
-h2 {
-    padding-left: 60px;
+.news h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .news li {
     list-style-type: none;
-    padding-bottom: 15px;
+    line-height: 40px;
 }
