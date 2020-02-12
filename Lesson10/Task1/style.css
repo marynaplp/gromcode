@@ -4,7 +4,6 @@ html {
 
 div {
     display: flex;
-    margin: 16px;
     border: 1px solid #deb887;
     justify-content: space-around;
 }
@@ -12,7 +11,7 @@ div {
 .horizontal>span {
     display: flex;
     height: 25px;
-    margin: 10px;
+    margin: 12px;
     background-color: aqua;
     justify-content: space-around;
     align-items: center;
@@ -28,5 +27,5 @@ div {
 }
 
 .vertical>span {
-    background-color: orangered;
+    background-color: coral;
 }
