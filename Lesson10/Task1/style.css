@@ -1,0 +1,32 @@
+html {
+    font-size: 24px;
+}
+
+div {
+    display: flex;
+    margin: 16px;
+    border: 1px solid #deb887;
+    justify-content: space-around;
+}
+
+.horizontal>span {
+    display: flex;
+    height: 50px;
+    margin: 16px;
+    background-color: aqua;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.vertical>span {
+    background-color: orange;
+}
