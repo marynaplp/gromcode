@@ -6,15 +6,18 @@ div {
     display: flex;
     border: 1px solid #deb887;
     justify-content: space-around;
+    margin: 16px;
+}
+
+.horizontal {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .horizontal>span {
-    display: flex;
-    height: 25px;
-    margin: 12px;
     background-color: aqua;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .vertical {
