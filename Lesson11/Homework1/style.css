@@ -6,14 +6,14 @@
 }
 
 .tooltip .tooltiptext {
-    position: absolute;
+    position: relative;
     background-color: grey;
     color: white;
     text-align: center;
     border-radius: 4px;
     padding: 8px;
-    margin-top: 5px;
-    bottom: -40px;
+    bottom: -30px;
+    margin-left: -97px;
 }
 
 .tooltip:hover .tooltiptext {
