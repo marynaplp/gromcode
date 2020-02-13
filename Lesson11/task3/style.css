@@ -4,21 +4,23 @@
 
 .dropdown {
     position: relative;
-    margin: 16px;
     background-color: darkgreen;
     opacity: 0.8;
     color: white;
     display: inline-block;
     padding: 8px;
-    font-size: 16px;
     cursor: pointer;
-    height: 34px;
+    padding: 16px;
+}
+
+span.menu-button {
+    font-size: 16px;
 }
 
 .menu-list {
     position: absolute;
-    top: 34px;
-    left: 0px;
+    top: 50px;
+    left: 0;
     color: black;
     list-style-type: none;
     background-color: lightcyan;
@@ -36,6 +38,10 @@
 
 .dropdown:hover .menu-list {
     display: block;
+}
+
+.menu-item:hover {
+    background-color: ghostwhite;
 }
 
 .dropdown:hover {
