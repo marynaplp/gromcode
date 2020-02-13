@@ -15,7 +15,7 @@
 }
 
 .tooltip:hover .tooltiptext {
-    visibility: visible;
+    display: block;
 }
 
 .tooltip[title="I'm a title text"] ::after {
