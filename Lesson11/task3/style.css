@@ -8,9 +8,9 @@
     opacity: 0.8;
     color: white;
     display: inline-block;
-    padding: 8px;
-    cursor: pointer;
     padding: 16px;
+    cursor: pointer;
+    margin: 16px;
 }
 
 span.menu-button {
