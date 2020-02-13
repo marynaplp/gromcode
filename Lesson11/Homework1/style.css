@@ -2,7 +2,7 @@
     display: inline-block;
     border-bottom: 1px dotted black;
     margin: 16px;
-    position: relative;
+    position: absolute;
 }
 
 .tooltip .tooltiptext {
@@ -12,10 +12,7 @@
     padding: 8px;
     border-radius: 8px;
     bottom: -40px;
-}
-
-.tooltip:hover .tooltiptext {
-    display: block;
+    left: 1px;
 }
 
 .tooltip[title="I'm a title text"] ::after {
