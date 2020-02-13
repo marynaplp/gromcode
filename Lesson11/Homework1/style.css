@@ -7,7 +7,6 @@
 
 .tooltip .tooltiptext {
     position: absolute;
-    visibility: hidden;
     background-color: grey;
     color: white;
     text-align: center;
