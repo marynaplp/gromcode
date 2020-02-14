@@ -19,9 +19,8 @@
  
  .technology {
      letter-spacing: 3px;
-     font-size: 24px;
-     opacity: 80%;
      text-decoration: underline;
+     font-size: 24px;
  }
  
  .translation {
