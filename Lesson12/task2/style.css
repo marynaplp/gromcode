@@ -9,12 +9,13 @@ h1 {
     white-space: nowrap;
     text-overflow: ellipsis;
     width: 50%;
-    margin: 16px auto;
+    margin: auto;
+    margin-bottom: 16px;
 }
 
 div {
     background-color: coral;
-    height: 215px;
+    height: 200px;
     color: white;
     text-align: center;
     line-height: 200px;
