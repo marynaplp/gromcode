@@ -8,9 +8,8 @@ h1 {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 50%;
+    width: 50vw;
     margin: auto;
-    margin-bottom: 5px;
 }
 
 div {
