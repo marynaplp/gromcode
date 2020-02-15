@@ -1,8 +1,4 @@
-        * {
-        box-sizing: border-box;
-    }
-    
-    .mountains {
+        .mountains {
         font-size: 32px;
         padding-top: 32px;
         height: 500px;
