@@ -1,20 +1,14 @@
-* {
+html {
     font-size: 18px;
 }
 
 .properties-list__item {
-    color: #f39;
-    font-size: 24px;
-    padding: 7px;
-    list-style-type: none;
-    line-height: 32px;
+    padding: 8px;
 }
 
-
-/*.properties-list {
+.properties-list {
     color: #f39;
     font-size: 24px;
-    line-height: 34px;
-    padding: 8px;
+    line-height: 32px;
     list-style-type: none;
-}*/
+}
