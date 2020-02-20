@@ -41,7 +41,7 @@
                     padding: 4px;
                 }
                 
-                .form-input:required {
+                .form-input:invalid {
                     border: 3px solid #ff0000;
                 }
                 
