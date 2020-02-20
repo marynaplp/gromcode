@@ -2,6 +2,7 @@ input[type="checkbox"] {
     visibility: hidden;
     width: 0;
     height: 0;
+    margin: 16px;
 }
 
 .checkmark {
@@ -15,7 +16,8 @@ input[type="checkbox"] {
 }
 
 .checkbox {
-    padding-left: 30px;
+    padding-left: 35px;
+    margin: 16px;
     position: relative;
     font-size: 24px;
 }
