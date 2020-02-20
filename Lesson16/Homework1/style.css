@@ -5,6 +5,7 @@
                 body {
                     background-color: bisque;
                     height: auto;
+                    font-family: monospace;
                 }
                 
                 .page {
@@ -41,7 +42,11 @@
                     outline: none;
                 }
                 
-                .form-input[type="text"] {
+                .form-input[type="password"] {
+                    border: 3px solid #ff0000;
+                }
+                
+                .form-input[type="e-mail"] {
                     border: 3px solid #ff0000;
                 }
                 
