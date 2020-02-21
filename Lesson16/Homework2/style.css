@@ -2,6 +2,10 @@
     margin: 32px;
 }
 
-.form input {
+div {
+    margin: 8px;
+}
+
+span {
     margin: 8px;
 }
