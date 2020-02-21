@@ -9,79 +9,76 @@
 </head>
 
 <body>
-    <main class="page">
-        <form class="login-form">
-            <div class="form-control">
-                <input class="form-input" type="text" name="primaryLanguage" value="HTML" disabled />
-            </div>
-            <div class="form-control">
-                <input type="checkbox" name="agree" disabled>
-            </div>
-            <div class="form-control">
-                <input type="checkbox" name="like" checked>
-            </div>
-            <div class="form-control">
-                <input class="form-input" type="color" name="favouriteColor" value="#ff7f50" />
-            </div>
-            <div class="form-control">
-                <input class="form-input" type="date" name="birthDate" value="2021-01-02" />
-            </div>
-            <div class="form-control">
-                <input class="form-input" type="datetime-local" name="birthDate" value="2024-10-04T13:02" />
-            </div>
-            <div class="form-control">
-                <input class="form-input" type="email" name="email" placeholder="example@domain.com" required />
-            </div>
-            <div class="form-control">
-                <input class="form-input" type="file" name="avatar">
-            </div>
-            <div class="form-control">
-                <input class="form-input" type="month" name="startLearning" value="2020-01">
-            </div>
-            <div class="form-control">
-                <input class="form-input" type="number" name="favouriteNumber" value="17">
-            </div>
-            <div class="form-control">
-                <textarea rows="5" maxlength="30" name="story" placeholder="A long time ago..."></textarea>
-            </div>
-            <div class="form-control">
-                <input type="password" name="password" value="secret">
+    <form class="form">
+        <div class="form-control">
+            <input class="form-input" type="text" name="primaryLanguage" value="HTML" disabled />
+        </div>
+        <div class="form-control">
+            <input type="checkbox" name="agree" unchecked>
+        </div>
+        <div class="form-control">
+            <input type="checkbox" name="like" checked readonly>
+        </div>
+        <div class="form-control">
+            <input class="form-input" type="color" name="favouriteColor" value="#ff7f50" />
+        </div>
+        <div class="form-control">
+            <input class="form-input" type="date" name="birthDate" value="2021-01-02" />
+        </div>
+        <div class="form-control">
+            <input class="form-input" type="datetime-local" name="birthTime" value="2024-10-04T13:02" />
+        </div>
+        <div class="form-control">
+            <input class="form-input" type="email" name="email" placeholder="example@domain.com" required />
+        </div>
+        <div class="form-control">
+            <input class="form-input" type="file" name="avatar">
+        </div>
+        <div class="form-control">
+            <input class="form-input" type="month" name="startLearning" value="2020-01">
+        </div>
+        <div class="form-control">
+            <input class="form-input" type="number" name="favouriteNumber" value="17">
+        </div>
+        <div class="form-control">
+            <textarea cols="30" rows="5" maxlength="30" name="story" placeholder="A long time ago..."></textarea>
+        </div>
+        <div class="form-control">
+            <input type="password" name="password" value="secret">
 
-            </div>
-            <span class="languages">
-        <input type="radio" id="html" name="front-end"><label for="html">
-            HTML </label>
-        <input type="radio" id="css" name="front-end" checked><label for="css">
-            CSS </label>
-        <input type="radio" id="JavaScript" name="front-end"><label for="JavaScript">
-                   JavaScript</label>
+        </div>
+        <span class="languages">
+        <input type="radio" name=languages > HTML
+        <input type="radio" name="languages" checked>
+            CSS 
+        <input type="radio" name="languages">JavaScript
 
             </span>
-            <div class="form-control">
-                <input type="range" value="30">
-            </div>
-            <div class="form-control">
-                <select name="framework">
+        <div class="form-control">
+            <input type="range" name="learningProcess" value="30">
+        </div>
+        <div class="form-control">
+            <select name="framework">
+            <option value="Query">jQuery</option>
             <option value="React">React</option>
-            <option value="React">jQuery</option>
-            <option value="React">Bootstap</option>
+            <option value="Bootstap">Bootstap</option>
         </select>
-            </div>
-            <div class="form-control">
-                <input type="search" name="search" placeholder="Type first letters...">
-            </div>
-            <div class="form-control">
-                <input type="time" name="lunchEnd" value="14:01">
-            </div>
-            <div class="form-control">
-                <input type="url" name="website" placeholder="http://website.com">
-            </div>
-            <div class="form-control">
-                <input type="week" name="birthWeek" value="2021-W51">
-            </div>
-            <button class="submit-button" type="submit">Save</button>
-        </form>
-    </main>
+        </div>
+        <div class="form-control">
+            <input type="search" name="search" placeholder="Type first letters...">
+        </div>
+        <div class="form-control">
+            <input type="time" name="lunchEnd" value="14:01">
+        </div>
+        <div class="form-control">
+            <input type="url" name="website" placeholder="https://website.com">
+        </div>
+        <div class="form-control">
+            <input type="week" name="birthWeek" value="2021-W51">
+        </div>
+        <button class="submit-button" type="submit">Save</button>
+    </form>
+
 </body>
 
 
