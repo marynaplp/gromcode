@@ -14,17 +14,17 @@ td {
     text-align: center;
 }
 
-.one td:nth-child(odd),
-.three td:nth-child(odd),
-.five td:nth-child(odd),
-.seven td:nth-child(odd) {
+.one td:nth-child(even),
+.three td:nth-child(even),
+.five td:nth-child(even),
+.seven td:nth-child(even) {
     background-color: black;
 }
 
-.two td:nth-child(even),
-.four td:nth-child(even),
-.six td:nth-child(even),
-.eight td:nth-child(even) {
+.two td:nth-child(odd),
+.four td:nth-child(odd),
+.six td:nth-child(odd),
+.eight td:nth-child(odd) {
     background-color: black;
 }
 
