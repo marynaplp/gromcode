@@ -3,16 +3,16 @@
 }
 
 @keyframes move {
-    0% {
+    from {
         left: 0;
         opacity: 1;
     }
-    100% {
-        left: 70px;
+    to {
+        margin-left: 70px;
     }
 }
 
-@keyframes blink {
+@keyframes blinking {
     0% {
         opacity: 0;
     }
@@ -34,7 +34,7 @@
 
 .spinner {
     position: relative;
-    animation: blink 2s;
+    animation: blinking 2s;
     animation-iteration-count: infinite;
 }
 
@@ -49,8 +49,7 @@
     width: 10px;
     height: 4px;
     border-radius: 2px;
-    animation: move 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation: move 2s, linear;
     animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
