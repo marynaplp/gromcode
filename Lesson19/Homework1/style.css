@@ -2,17 +2,17 @@
     box-sizing: border-box;
 }
 
-@keyframes moving {
-    from {
+@keyframes move {
+    0% {
         left: 0;
         opacity: 1;
     }
-    to {
+    100% {
         left: 70px;
     }
 }
 
-@keyframes blinking {
+@keyframes blink {
     0% {
         opacity: 0;
     }
@@ -34,8 +34,8 @@
 
 .spinner {
     position: relative;
+    animation: blink 2s;
     animation-iteration-count: infinite;
-    animation: blinking 2s linear;
 }
 
 .spinner-text {
@@ -49,7 +49,8 @@
     width: 10px;
     height: 4px;
     border-radius: 2px;
-    animation: moving 2s linear;
+    animation: move 2s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
