@@ -1,32 +1,25 @@
-* {
-    box-sizing: border-box:
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .block {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    position: relative;
-    justify-content: center;
-    animation: move 2s;
-    timing-function: ease;
-    animation-fill-mode: none;
-}
-
-.block-text {
-    display: flex;
     position: absolute;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    background-color: coral;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 700;
     color: white;
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 100px;
+    border-radius: 10px;
+    background-color: coral;
+    animation: move 2s ease;
 }
 
 @keyframes move {
@@ -36,4 +29,5 @@
     to {
         top: calc(50vh - 50px);
     }
+    edit
 }
