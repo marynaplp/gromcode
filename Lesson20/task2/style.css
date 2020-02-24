@@ -14,9 +14,7 @@ body {
     color: white;
     border: none;
     margin: auto;
-    animation: jump .5s;
-    animation: spin .5s .4s;
-    animation: hide .5s .2s forwards;
+    animation: jump .5s ease-in-out .4s, spin .5s ease-in-out, hide 1s ease 2s forwards;
 }
 
 @keyframes jump {
