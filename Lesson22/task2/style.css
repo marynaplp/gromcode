@@ -42,15 +42,13 @@
                 background-color: #ff7f50;
                 min-height: 200px;
                 display: flex;
-                flex-grow: 1;
-                width: 25%;
+                width: 25vw;
             }
             .products-list {
                 background-color: #006400;
                 min-height: 200px;
                 display: flex;
-                flex-grow: 1;
-                width: 25%ж
+                width: 25vw;
             }
         }
         
