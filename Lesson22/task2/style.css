@@ -3,7 +3,7 @@
         }
         
         .navigation {
-            background-color: #fa8;
+            background-color: #ff7f50;
             min-height: 200px;
             display: flex;
             flex-grow: 1;
@@ -38,6 +38,20 @@
                 display: flex;
                 flex-grow: 1;
             }
+            .navigation {
+                background-color: #ff7f50;
+                min-height: 200px;
+                display: flex;
+                flex-grow: 1;
+                width: 25%;
+            }
+            .products-list {
+                background-color: #006400;
+                min-height: 200px;
+                display: flex;
+                flex-grow: 1;
+                width: 25%ж
+            }
         }
         
         @media screen and (min-width:900px) {
@@ -52,7 +66,7 @@
                 width: 33.333333333vw;
             }
             .navigation {
-                background-color: #fa8;
+                background-color: #ff7f50;
                 min-height: 200px;
                 display: flex;
                 flex-grow: 2;
