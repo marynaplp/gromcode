@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vh;
+    height: 100%;
 }
 
 .header {
@@ -22,12 +22,11 @@ body {
     background-image: linear-gradient(60deg, red, orange);
 }
 
-footer {
+.footer {
     background-color: #e5e5e5;
     padding: 0.5em;
     text-align: center;
-    margin-top: auto;
-    width: 100%;
+    flex: 0 0 auto;
 }
 
 .navigation,
@@ -36,20 +35,15 @@ footer {
     padding: 0.5em;
 }
 
-h1 {
-    display: flex;
-    justify-content: center;
+.navigation {
+    width: 20%;
 }
 
-main {
-    width: 100vw;
+.main {
     display: flex;
     justify-content: center;
     flex: 1 0 auto;
-}
-
-.navigation {
-    width: 20%;
+    width: 100vw;
 }
 
 .section {
@@ -59,6 +53,7 @@ main {
 
 .news {
     width: 20%;
+    height: 100%;
 }
 
 .units-list {
@@ -85,16 +80,12 @@ main {
 .navigation__item {
     display: flex;
     align-items: center;
-    background-color: #808080;
-    color: white;
     height: 2em;
     margin: 0.5em 0;
+    background-color: #808080;
 }
 
 .nav-list-link {
-    padding: 0 0.5em;
-    width: 100%;
-    text-decoration: none;
     color: white;
     margin: 0.5em;
     text-decoration: none;
