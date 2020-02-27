@@ -31,8 +31,7 @@ footer {
 }
 
 .navigation,
-main,
-.news {
+.section .news {
     padding: 0.5em;
 }
 
