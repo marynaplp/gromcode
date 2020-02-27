@@ -26,17 +26,39 @@
             text-transform: lowercase;
             margin: auto;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 8px;
         }
         
         @media screen and (min-width:600px) {
             .product {
                 display: flex;
-                flex-grow: 2;
+                flex-grow: 1;
             }
         }
         
         @media screen and (min-width:900px) {
             .content {
                 display: flex;
+            }
+            .products-list {
+                background-color: #006400;
+                min-height: 200px;
+                display: flex;
+                flex-grow: 2;
+                width: 33.333333333vw;
+            }
+            .navigation {
+                background-color: #fa8;
+                min-height: 200px;
+                display: flex;
+                flex-grow: 2;
+                width: 33.333333333vw;
+            }
+            .news {
+                background-color: #0ff;
+                min-height: 200px;
+                display: flex;
+                flex-grow: 1;
+                width: 33.333333333vw;
             }
         }
