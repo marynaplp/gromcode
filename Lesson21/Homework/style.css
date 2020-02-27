@@ -36,7 +36,7 @@ body {
     flex-direction: column;
 }
 
-.navigation__item {
+.nav-list__item {
     display: flex;
     align-items: center;
     background-color: #808080;
@@ -64,8 +64,10 @@ body {
 }
 
 .section__header {
+    display: flex;
     font-size: 5vw;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .units-list {
