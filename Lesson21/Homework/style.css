@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    min-height: 100vh;
 }
 
 .header {
@@ -31,8 +31,14 @@ footer {
 }
 
 .navigation,
-.section .news {
+.section,
+.news {
     padding: 0.5em;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
 }
 
 main {
@@ -86,6 +92,8 @@ main {
 }
 
 .nav-list-link {
+    padding: 0 0.5em;
+    width: 100%;
     text-decoration: none;
     color: white;
     margin: 0.5em;
