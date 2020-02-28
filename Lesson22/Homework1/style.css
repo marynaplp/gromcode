@@ -16,51 +16,56 @@ html {
 }
 
 .button {
-    font-size: 2em;
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
     border: none;
     background-color: none;
     cursor: pointer;
     outline: 0;
+    font-size: 2em;
 }
 
 .navigation {
     width: 20vw;
+    margin: 1.5em .5em;
 }
 
 .nav-list {
     padding: 0;
+    margin: 0;
     list-style-type: none;
 }
 
 .nav-list-item {
     background-color: #808080;
     color: white;
-    line-height: 2em;
+    height: 2em;
     margin: 0.5em;
+}
+
+.nav-list-link {
+    display: block;
+    width: 100%;
+    line-height: 2em;
+    padding: 0 0.5em;
+    text-decoration: none;
+    color: white;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 
-.nav-list-link {
-    width: 100%;
-    padding: 0 0.5em 0 0.5em;
-    text-decoration: none;
-    color: white;
-}
-
 @media screen and (max-width:600px) {
-    .nav-list {
+    .navigation {
         display: none;
     }
 }
 
 @media screen and(min-width:600px) {
-    .nav-list {
+    .navigation {
         display: block;
     }
     .button {
-        display: none;
+        display: none !important;
     }
 }
