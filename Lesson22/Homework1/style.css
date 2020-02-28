@@ -15,7 +15,7 @@ html {
     background-color: #eee;
 }
 
-.button {
+button {
     padding-top: 0;
     padding-bottom: 0;
     border: none;
@@ -61,8 +61,8 @@ html {
     }
 }
 
-@media screen and(min-width:600px) {
-    .button .fa-bars {
+@media screen and (min-width:600px) {
+    button {
         display: none;
     }
     .navigation {
