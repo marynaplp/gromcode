@@ -11,7 +11,7 @@ html {
     display: flex;
     align-items: center;
     height: 3em;
-    padding: 0 1em;
+    padding: 1em;
     background-color: #eee;
 }
 
@@ -19,15 +19,15 @@ button {
     padding-top: 0;
     padding-bottom: 0;
     border: none;
-    background-color: none;
+    background-color: transparent;
     cursor: pointer;
-    outline: 0;
+    outline: none;
     font-size: 2em;
 }
 
 .navigation {
-    width: 20vw;
-    margin: 1.5em .5em;
+    padding-top: 0.5em;
+    width: 20%;
 }
 
 .nav-list {
@@ -37,17 +37,17 @@ button {
 }
 
 .nav-list-item {
+    width: 100%;
     background-color: #808080;
     color: white;
-    height: 2em;
+    line-height: 2em;
     margin: 0.5em;
+    display: flex;
 }
 
 .nav-list-link {
-    display: block;
-    width: 100%;
-    line-height: 2em;
-    padding: 0 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     text-decoration: none;
     color: white;
     overflow: hidden;
@@ -56,7 +56,7 @@ button {
 }
 
 @media screen and (max-width:600px) {
-    .navigation {
+    .nav-list {
         display: none;
     }
 }
@@ -65,7 +65,7 @@ button {
     button {
         display: none;
     }
-    .navigation {
+    .nav-list {
         display: block;
     }
 }
