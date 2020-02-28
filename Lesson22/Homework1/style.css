@@ -38,6 +38,9 @@ html {
     color: white;
     line-height: 2em;
     margin: 0.5em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .nav-list-link {
@@ -45,9 +48,6 @@ html {
     padding: 0 0.5em 0 0.5em;
     text-decoration: none;
     color: white;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 
 @media screen and (max-width:600px) {
