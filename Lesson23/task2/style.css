@@ -1,3 +1,8 @@
+/*@mixin for-extra-small {
+    @media screen and (max-width: $sm-1) {
+        @content;
+    }
+}*/
 * {
   box-sizing: border-box;
 }
@@ -13,18 +18,14 @@ body {
   width: 100px;
   height: 100px;
   margin: 16px;
+  background-color: #ff7f50;
 }
-@media screen and (max-width: 600px) {
-  .square {
-    background-color: #ff7f50;
-  }
-}
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
   .square {
     background-color: #a61;
   }
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 600px) {
   .square {
     background-color: #8a2be2;
   }
@@ -32,6 +33,21 @@ body {
 @media screen and (min-width: 1200px) {
   .square {
     background-color: #c47;
+  }
+}
+
+.container {
+  display: flex;
+}
+@media screen and (orientation: landscape) {
+  .container {
+    display: flex;
+  }
+}
+@media (orientation: portrait) {
+  .container {
+    display: flex;
+    flex-direction: row;
   }
 }
 
