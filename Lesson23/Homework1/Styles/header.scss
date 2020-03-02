@@ -3,6 +3,7 @@
 }
 
 .menu {
+    margin: 0;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -41,4 +42,8 @@
             color: black;
         }
     }
+}
+
+.submenu {
+    display: none;
 }
