@@ -1,0 +1,23 @@
+/*Используйте CSS классы и  выносите повторяющий код в отдельный класс*/
+
+body {
+    background-color: #faebd7;
+}
+
+.rectangle {
+    border: 8px solid black;
+    width: 512px;
+    height: 128px;
+    padding: 16px;
+    margin: 16px;
+}
+
+.rectangle1 {
+    background-color: aquamarine;
+    box-sizing: content-box;
+}
+
+.rectangle2 {
+    background-color: azure;
+    box-sizing: border-box;
+}

@@ -1,0 +1,27 @@
+div {
+    border: 2px solid black;
+}
+
+.PinkBox {
+    margin: 25px;
+    padding: 50px;
+    background-color: pink;
+}
+
+.GreenBox {
+    margin: 25px;
+    padding: 25px;
+    background-color: green;
+}
+
+.YellowBox {
+    margin: 25px;
+    padding: 25px;
+    background-color: yellow;
+}
+
+.BlueBox {
+    margin: 50px;
+    padding: 25px;
+    background-color: blue;
+}

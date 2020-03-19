@@ -1,0 +1,42 @@
+/*Задайте зеленый фон и белый шрифт нумерованному списку из первого section */
+
+section.already-learned ol {
+    background-color: green;
+    color: white;
+}
+
+
+/*Установите оранжевый фон и зеленый шрифт нумерованному списку из второго  <section>*/
+
+section.to-be-learned ol {
+    background-color: orange;
+    color: green;
+}
+
+
+/*Установите оранжевый фон для сех тегов <code> первого <section>*/
+
+section.already-learned code {
+    background-color: orange;
+}
+
+
+/*Установите зеленый фон для всех тегов <code> второго <section>*/
+
+section.to-be-learned code {
+    background-color: green;
+}
+
+
+/*Установите border:2px solid blue для тегов <code> которие находяться в теге  <h4> элемента списка после элемента с id="special*/
+
+#special1+li>h4 code {
+    border: 2px solid blue;
+}
+
+
+/* Задайте размер шріфта равний 24px(font-size:24px) всем елементам списака после элемента с id="special2*/
+
+#special2~li {
+    font-size: 24px;
+}

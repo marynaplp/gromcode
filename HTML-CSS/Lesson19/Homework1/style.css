@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+@keyframes move {
+    from {
+        left: 0;
+        opacity: 1;
+    }
+    to {
+        margin-left: 70px;
+    }
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.spinner {
+    position: relative;
+    animation: blinking 2s;
+    animation-iteration-count: infinite;
+}
+
+.spinner-text {
+    font-family: monospace;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.rect {
+    background-color: black;
+    width: 10px;
+    height: 4px;
+    border-radius: 2px;
+    animation: move 2s, linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}

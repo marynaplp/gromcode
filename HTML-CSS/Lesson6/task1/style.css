@@ -1,0 +1,47 @@
+/*Задайте красную границу с ылке у которой значение атрибута  "href" начинается со строки "broken"*/
+
+:active[href^="broken"] {
+    border: 2px solid red;
+}
+
+
+/*Задайте всем <li> отступ 16px */
+
+li {
+    margin-bottom: 16px;
+}
+
+
+/*Задайте черную границу ссылке с атрибутом "target" равным  "_blank"*/
+
+a[target="_blank"] {
+    border: 2px solid black;
+}
+
+
+/*Задайте отступ слева 50px всем  ссылкам на комерческие сайты */
+
+a[href$=".com"] {
+    margin-left: 50px;
+}
+
+
+/*Задайте зеленый цвет шрифта всем ссылкам которые содержат  в адресе www*/
+
+a[href*="www"] {
+    color: green;
+}
+
+
+/*Увеличте шрифт до 24 px*/
+
+a[title~="popular"] {
+    font-size: 24px;
+}
+
+
+/**/
+
+[lang|="en"] {
+    font-size: 10px;
+}

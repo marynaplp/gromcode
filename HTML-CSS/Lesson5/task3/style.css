@@ -1,0 +1,27 @@
+/* Задайте красный фон элементуб у которого однооврменно есть два класса super-important и highlighted*/
+
+.super-important.highlighted {
+    background-color: red;
+}
+
+
+/*Задайте желтый цвет текста элементам у которых есть хотя бы один из классов highlighted или company-data*/
+
+.highlighted,
+.company-data {
+    color: yellow;
+}
+
+
+/*Задайте всем <li>  с классом user-data шрифта 24px*/
+
+li.user-data {
+    font-size: 24px;
+}
+
+
+/*Задайте всем <span> с классом user-data размер шрифта 10px*/
+
+span.user-data {
+    font-size: 10px;
+}
