@@ -5,4 +5,4 @@ const $hobby = 'Walking';
 const favouriteDessert = 'cake';
 let pet_ = 'dog';
 let superNumber;
-superNumber = '17';
+superNumber = 17;
