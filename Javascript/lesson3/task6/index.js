@@ -8,15 +8,15 @@ const anotherMessage = 'text as well';
 const isLoggedIn = Boolean(userName);
 
 /* В коде ниже нужно использовать правильные операторы после знака присваивания */
-const activeUser = anotherUser || defaultUserName;
+const activeUser = anotherUser /**/ || defaultUserName;
 console.log(activeUser);
-const hasAccess = isAdmin != isLoggedIn;
+const hasAccess = isAdmin /**/ != isLoggedIn;
 console.log(hasAccess);
-const isTruthy = message != anotherMessage;
+const isTruthy = message /**/ != anotherMessage;
 console.log(isTruthy);
-const isFalsy = !isLoggedIn;
-console.log(isFalse);
-const isNotTrue = typeof message == 'number';
+const isFalsy = /**/ !isLoggedIn;
+console.log(isFalsy);
+const isNotTrue = typeof message /**/ == 'number';
 console.log(isNotTrue);
-const isTrue = typeof message != 'boolean';
+const isTrue = typeof message /**/ != 'boolean';
 console.log(isTrue);
