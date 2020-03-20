@@ -30,13 +30,10 @@ console.log("5 - undefined: ", 5 - undefined); // NaN
 console.log("'text' + null: ", 'text' + null); //textnull
 
 let num = 17;
-console.log("num = 17: ", num = 17); //17
+console.log("++num: ", ++num);
+console.log("num++: ", num++)
 
-// Постфиксная и префиксная форма записи
-++num;
-console.log("++num: ", ++num); //18
-num++;
-console.log("num++: ", num++); //18
+// Постфиксная и префиксная форма записи  
 
 
 // математические операторы приводят операнды к числам
