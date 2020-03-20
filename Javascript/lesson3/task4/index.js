@@ -38,7 +38,7 @@ console.log("'text' && false: ", 'text' && false); //false
 true && 'text';
 console.log("true && 'text': ", true && 'text'); //text
 undefined && null && 0 && '' && null;
-console.log("undefined && null 0 && '' && null: ", undefined && null && 0 && '' && null); //undefined
+console.log("undefined && null && 0 && '' && null: ", undefined && null && 0 && '' && null); //undefined
 
 
 /* оператор отрицания (OR) */
