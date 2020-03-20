@@ -34,9 +34,9 @@ console.log("num = 17: ", num = 17); //17
 
 // Постфиксная и префиксная форма записи
 ++num;
-console.log("num: ", ++num); //18
+console.log("++num: ", ++num); //18
 num++;
-console.log("num: ", num++); //18
+console.log("num++: ", num++); //18
 
 
 // математические операторы приводят операнды к числам
