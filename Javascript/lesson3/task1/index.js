@@ -24,20 +24,19 @@ console.log("undefined + '5': ", undefined + '5'); //undefined5
 console.log("7 - null: ", 7 - null); //7
 
 5 - undefined;
-console.log("5 - underfined: ", 5 - undefined); // NaN
+console.log("5 - undefined: ", 5 - undefined); // NaN
 
 'text' + null;
 console.log("'text' + null: ", 'text' + null); //textnull
 
 let num = 17;
-console.log("num = 17: ",
-    num = 17); //17
+console.log("num = 17: ", num = 17); //17
 
 // Постфиксная и префиксная форма записи
 ++num;
-console.log("++num: ", ++num); //18
+console.log("num: ", ++num); //18
 num++;
-console.log("num++: ", num++); //18
+console.log("num: ", num++); //18
 
 
 // математические операторы приводят операнды к числам
