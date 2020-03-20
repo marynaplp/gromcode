@@ -19,4 +19,4 @@ console.log(isFalse);
 const isNotTrue = typeof message == 'number';
 console.log(isNotTrue);
 const isTrue = typeof message != 'boolean';
-console.log(isTrue)
+console.log(isTrue);
