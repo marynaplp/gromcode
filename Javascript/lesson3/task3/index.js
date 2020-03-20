@@ -6,7 +6,7 @@ a > b;
 console.log("a > b: ", a > b); //true
 
 a <= b;
-console.log("a <== b: ", a <= b); //false
+console.log("a <= b: ", a <= b); //false
 
 a == b;
 console.log("a == b: ", a == b); //  false
@@ -31,7 +31,7 @@ console.log("17 === 1: ", 17 === 1); //false
 17 === 17;
 console.log("17 === 17: ", 17 === 17); //true
 17 === '17';
-("17 === '17': ", 17 === '17'); //false
+console.log("17 === '17': ", 17 === '17'); //false
 17 === true;
 console.log("17 === true: ", 17 === true); //false
 '0' === '';
@@ -49,7 +49,7 @@ console.log("false === 0: ", false === 0); // false
 /* нестрогое сравнение */
 
 17 == '17';
-console.log("17 === '17': ", 17 == '17'); //true
+console.log("17 == '17': ", 17 == '17'); //true
 '0' == '';
 console.log("'0' == '': ", '0' == ''); //false
 0 == '';
@@ -65,7 +65,7 @@ console.log("false == 0: ", false == 0); //true
 undefined == null;
 console.log("undefined == null: ", undefined == null);
 undefined == 0;
-console.log("undefined == 0: ", undefined == null); // true
+console.log("undefined == 0: ", undefined == 0); // true
 null == 0;
 console.log("null == 0: ", null == 0);
 undefined < 0;
