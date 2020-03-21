@@ -4,4 +4,3 @@
      }
 
  }
- console.log('Result: ' + result);
