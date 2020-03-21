@@ -1,7 +1,7 @@
-let n = 1;
-let sum = 0;
-while (n <= 50) {
-    console.log(n);
-    n++;
+let result = ' ';
+let n = 10;
+let sum = 0
+for (let n = 1; n <= 50; n = n + 1) {
+    sum = sum + n + ' ';
 }
 console.log('Result: ' + sum);
