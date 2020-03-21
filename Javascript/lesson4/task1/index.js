@@ -1,9 +1,10 @@
-let n = 100;
+const n = 100;
 let sum = 0;
-// (хранение суммы)
-while (n > 0) {
-    sum += n;
-    n -= 1;
-}
+
+
+for (let i = 0; i <= n; ++i) {
+    sum += i;
+};
+
 
 console.log('Result: ' + sum);
