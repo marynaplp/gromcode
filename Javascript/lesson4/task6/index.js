@@ -1,7 +1,7 @@
-let m = 1;
+let m = 0;
 let n = 1000;
 for (let m = 0; m <= n; m++) {
-    if (m % 2 != 0) {
+    if (m % 2) {
         console.log('Found');
     }
 }
