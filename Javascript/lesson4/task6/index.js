@@ -1,6 +1,6 @@
 let result = 0;
 
-for (let m = 0; m <= 1001; m++) {
+for (let m = 0; m <= 1000; m++) {
     if (m % 2 === 1) {
         console.log('Found');
         result += m;
