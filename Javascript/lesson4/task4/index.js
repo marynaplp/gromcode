@@ -4,4 +4,4 @@ let sum = String();
 for (let n = 1; n <= 50; n = n + 1) {
     sum = sum + n + ' ';
 };
-console.log('Result: ' + sum);
+console.log(sum);
