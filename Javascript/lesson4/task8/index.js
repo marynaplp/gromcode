@@ -1,4 +1,7 @@
 let sum = 0;
+whole;
+divided;
+
 for (let i = 0; i <= 1000; ++i) {
     sum += i;
 }
