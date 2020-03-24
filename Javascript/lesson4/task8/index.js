@@ -6,4 +6,9 @@ for (let i = 0; i <= 1000; ++i) {
 let whole = sum / 1234;
 let divided = sum % 1234;
 
-console.log(whole < divided);
+while (whole < divided) {
+    console.log(true);
+}
+while (whole > divided) {
+    console.log(false);
+}
