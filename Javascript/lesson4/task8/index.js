@@ -11,4 +11,5 @@ while (whole < divided) {
 }
 while (whole > divided) {
     console.log(false);
+    break;
 }
