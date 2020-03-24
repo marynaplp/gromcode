@@ -1,7 +1,7 @@
 //function getSquare(num) {
 
 //}
-const getSquare = (num) => {
+const square = (num) => {
     return num * num;
 }
 const result = getSquare(5)
