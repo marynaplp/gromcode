@@ -1,12 +1,12 @@
 let sum = 0,
-    remainder,
+    whole,
     division;
 
 for (let i = 1; i <= 1000; i++) {
     sum += i;
 };
 
-remainder = sum % 1234;
+whole = sum % 1234;
 division = sum / 1234;
 
-console.log(remainder < division);
+console.log(whole < division);
