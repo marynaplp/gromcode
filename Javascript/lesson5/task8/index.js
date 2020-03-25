@@ -1,7 +1,7 @@
 function compareSums(a, b, c, d) {
     function sum(from, to) {
         let result = O;
-        for (let i = from; i < to; i++) {
+        for (let i = from; i <= to; i++) {
             result += i;
         }
         return result;
