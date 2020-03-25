@@ -4,12 +4,11 @@ function compareSums(a, b, c, d) {
         for (let i = from; i <= to; i++) {
             result += i;
         }
+        return result;
     }
-    if (from > to) {
+    if (sum(a, b) > sum(c, d)) {
         return true;
     } else {
         return false;
-
-
     }
 }
