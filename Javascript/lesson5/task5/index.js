@@ -1,10 +1,12 @@
 function getSum(a, b) {
     let sum = 0;
-    for (let i = a; i < b; i++); {
-        if (i % 2 === 0) {
-            sum += i;
+    do {
+        if (a % 2 === 0) {
+            sum += a;
             console.log(sum);
         }
-    }
+        a++;
+    } while (a <= b);
+
     return (sum);
 }
