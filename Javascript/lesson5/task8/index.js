@@ -1,14 +1,14 @@
+function sum(from, to) {
+    return from + to;
+}
+
 function compareSums(a, b, c, d) {
-    function sum(from, to) {
-        let result = O;
-        for (let i = from; i <= to; i++) {
-            result += i;
-        }
-        return result;
-    }
-    if (sum(a, b) > sum(c, d)) {
+    let firstSum = sum(a, b);
+    let secondSum = sum(c, d);
+    if (fistSum > secondSum) {
         return true;
     } else {
         return false;
     }
+
 }
