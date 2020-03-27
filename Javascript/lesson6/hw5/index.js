@@ -7,5 +7,5 @@ const reverseArray = arr => {
     for (let i = 0; i < arr.length; i++) {
         reversedArr.unshift(arr[i]);
     }
-    return rreversedArr;
+    return reversedArr;
 }
