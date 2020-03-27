@@ -8,6 +8,6 @@ function reverseArray(arr) {
         newArray.push(arr[i]);
     }
     return result
-
-
 }
+
+const getReverseArray = reverseArray(arr);
