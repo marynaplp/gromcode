@@ -4,7 +4,7 @@ function squareArray(arr) {
         return null;
     } else {
         squareArr.push(arr[i] * arr[i])
-    }
+    };
     return squareArr;
 
 }
