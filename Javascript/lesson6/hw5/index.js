@@ -1,3 +1,5 @@
+const arr = [2, 5, 6, 7, 8, 9];
+
 function reverseArray(arr) {
     if (!Array.isArray(arr)) return null;
 
