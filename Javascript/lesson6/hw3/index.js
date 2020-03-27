@@ -4,7 +4,7 @@ function checkSum(arr) {
     }
     if (Array.isArray(arr)) {
         let sum = 0;
-        for (let el in arr) {
+        for (let i in arr) {
             sum += array[i];
         }
         if (sum > 100) {
