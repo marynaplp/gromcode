@@ -1,6 +1,6 @@
 const arr = [2, 5, 6, 7, 8, 9];
 
-function reverseArray(arr) {
+const reverseArray = arr => {
     if (!Array.isArray(arr)) return null;
 
     let result = [];
@@ -9,5 +9,3 @@ function reverseArray(arr) {
     }
     return result
 }
-
-const getReverseArray = reverseArray(arr);
