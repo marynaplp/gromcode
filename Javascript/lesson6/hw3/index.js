@@ -1,5 +1,4 @@
 function checkSum(arr) {
-    let checkSum = [];
     if (!Array.isArray(arr)) {
         return null;
     }
