@@ -7,9 +7,9 @@ function checkSum(arr) {
         for (let i = 0; i < arr.length; i++) {
             sum += array[i];
         }
+        return sum;
         if (sum > 100) {
             return true;
-
         } else { return false; }
     }
 }
