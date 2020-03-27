@@ -1,11 +1,11 @@
 function squareArray(arr) {
-    let squareArr = [];
+    let squaredArr = [];
     if (!Array.isArray(arr)) {
         return null;
     }
     for (let i = 0; i < arr.length; i++) {
-        squareArr.push(arr[i] * arr[i])
-    };
-    return squareArr;
+        squaredArr.push(arr[i] * arr[i])
+    }
+    return squaredArr;
 
 }
