@@ -1,11 +1,18 @@
 const arr = [2, 5, 6, 7, 8, 9];
 
-const reverseArray = arr => {
-    if (!Array.isArray(arr)) return null;
+function reverseArray(arr) {
 
-    let result = [];
-    for (let i = array.length - 1; i >= 0; i--) {
-        newArray.push(arr[i]);
+    let res = [];
+    for (let i = arr.length - 1; i >= 0; i--) {
+        res.push(arr[i]);
+
+
+        if (!Array.isArray(arr)) {
+            return null;
+        }
     }
-    return result
+    return res;
 }
+
+
+const getReverseArray = reverseArray(mainArray);
