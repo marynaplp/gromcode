@@ -7,5 +7,5 @@ function getSpecialNumbers(m, n) {
         }
     }
 
-    return getSpecialNumbers
+    return getSpecialNumbers;
 }
