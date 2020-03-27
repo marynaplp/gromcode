@@ -1,8 +1,13 @@
-const checkSum = arr => {
+function checkSum(arr) {
     if (!Array.isArray(arr)) {
         return null;
-        let res = arr.reduce((accumulator, currentValue) => accumulator + currentValue);
-        if (res > 100) {
+    }
+    if (Array.isArray(arr)) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            sum += array[i];
+        }
+        if (sum > 100) {
             return true;
 
         } else { return false; }
