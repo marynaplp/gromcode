@@ -2,9 +2,9 @@ function cloneArr(arr) {
     if (!Array.isArray(arr)) {
         return null;
     }
-    let clonedArr = [];
-    for (let i = 0; i < cloned.length; i++) {
-        cloned[i] = Clone(clonned[i]);
+    let NewArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        NewArr.push(arr[i]);
     }
-    return clonned;
+    return NewArr;
 }
