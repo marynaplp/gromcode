@@ -3,5 +3,5 @@ function getSubArray(arr, num) {
     for (let i = 0; i < num; i++) {
         result.push(arr);
     }
-    return result;
+    return result([i]);
 };
