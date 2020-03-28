@@ -1,9 +1,10 @@
 function withdraw(clients, balances, client, amount) {
-    for (let j = 0; j < clients.length; j++) {
-        if (clients[j] == client) {
+    for (let i = 0; i < clients.length; i++) {
+        if (clients[i] == client) {
             if (balances[i] > amount) {
                 return balances[i] -= amount;
-            } else {
+            }
+            if (balances[i] < amount) {
                 return -1;
             }
 
