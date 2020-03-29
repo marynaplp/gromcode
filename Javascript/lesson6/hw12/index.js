@@ -1,17 +1,17 @@
+let array = [1, 1, 2, 2, 3, 3, 33, 4, 4, 5, 5, 6, 6]
+
 function removeDuplicates(array) {
-    if (!Array.isArray(arr)) {
-        return null;
-    }
-    let a = [];
+    let newArray = [];
     for (let i = 0; i < array.length; i++) {
-        a.push(array[i])
-        for (let k = i + 1; k < array.length; k++) {
-
-            if (array[i] === array[k]) {
-
-                a.pop(array[k]);
+        let uniq = false;
+        for (let j = 0; j < newArray.length; j++) {
+            if (array[i] === newArray[j]) {
+                uniq = true;
             }
         }
+        if (uniq == false) {
+            newArray.push(array[i]);
+        }
     }
-    return a;
+    return newArray;
 }
