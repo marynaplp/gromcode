@@ -4,12 +4,12 @@ function checkSum(arr) {
     }
     if (Array.isArray(arr)) {
         let sum = 0;
-        for (let i = 0; i < arr.length; i++) {
-            sum += array[i];
+        for (let el in arr) {
+            sum += arr[el]
         }
         if (sum > 100) {
             return true;
-
         } else { return false; }
     }
+
 }

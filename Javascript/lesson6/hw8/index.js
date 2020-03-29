@@ -1,24 +1,13 @@
 function sortAsc(array) {
-    if (!Array.isArray(arr)) {
-        return null;
-    }
-
     array.sort();
     return array;
 }
 
-
-
 function sortDesc(array) {
-
-    for (let i = 0; i < array.length - 1; i++) {
-        for (let j = 0; j < array.length - 1 - i; j++) {
-            if (array[j + 1] > array[j]) {
-                let max = array[j + 1];
-                array[j + 1] = array[j];
-                array[j] = max;
-            }
-        }
+    array.sort();
+    let result = [];
+    for (let i of array) {
+        result.unshift(i);
     }
-    return array;
+    return result;
 }
