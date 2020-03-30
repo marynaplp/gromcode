@@ -7,5 +7,6 @@ const getMessagessForBestStudents = (allSudents, failedStudents) => {
 
 }
 const allStudents = ['Ann', 'Tom', 'Bob', 'Kate'];
+const failedStudents = ['Tom', 'Bob'];
 // Find passed students
 //add message Good job
