@@ -1,2 +1,4 @@
-const sortDesc = numbers =>
+const sortDesc = numbers => {
     numbers.sort((a, b) => b - a);
+    return numbers;
+};
