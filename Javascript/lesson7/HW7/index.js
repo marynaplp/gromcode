@@ -1,4 +1,5 @@
-function filterNames(arr, text) {
-    return arr.filter(name => name(text).length > 5);
+const filterNames = (arr, text) => {
+    return arr.filter(el => el(text).length > 5);
+
 
 };
