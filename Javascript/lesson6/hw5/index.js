@@ -4,8 +4,11 @@ const reverseArray = arr => {
     }
 
     let reversedArr = [];
-    for (let i = 0; i < arr.length; i++) {
-        reversedArr.unshift(arr[i]);
+    if (Array.isArray(arr)) {
+        newArray = arr.slice().reverse();
+    } else {
+        return null;
     }
+
     return reversedArr;
 }
