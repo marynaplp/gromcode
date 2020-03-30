@@ -5,7 +5,7 @@ const reverseArray = arr => {
 
     let reversedArr = [];
     if (Array.isArray(arr)) {
-        newArray = arr.slice().reverse();
+        newArray = arr.slice().reversed();
     } else {
         return null;
     }

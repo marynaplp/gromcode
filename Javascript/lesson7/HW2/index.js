@@ -1,9 +1,11 @@
-const reversed = arr => {
-    let newArr = [];
+const reverseArray = arr => {
+
+    let reversedArr = [];
     if (Array.isArray(arr)) {
-        newArr = arr.map(num => num * num)
+        reversedArray = arr.slice().reversed();
     } else {
         return null;
     }
-    return newArr;
+
+    return reversedArr;
 }
