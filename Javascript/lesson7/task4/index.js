@@ -1,9 +1,12 @@
-const getMessagesForBestStudents = (allSudents, failedStudents) =>
-    allStudents
-    .filter(name => !(failedStudents.includes(name))
+function getMessagesForBestStudents(allStudents, failedStudents) {
+    const specialStudents = allStudents
+        .filter(name => !(failedStudents.indexOf(name) !== -1))
         .map(name => 'Good job, ' + name);
+    return specialStudents;
+};
 
-        const allStudents = ['Ann', 'Tom', 'Bob', 'Kate'];
-        const failedStudents = ['Tom', 'Bob'];
-        // Find passed students
-        //add message Good job
+const allStudents = ['Ann', 'Tom', 'Bob', 'Kate'];
+const failedStudents = ['Tom', 'Bob'];
+console.log(getMessagesForBestStudents(allStudents, failedStudents));
+// Find passed students
+//add message Good job
