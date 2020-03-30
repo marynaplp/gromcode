@@ -1,8 +1,8 @@
 const getSpecialNumbers = numbers => {
-    let specialNumber = [];
+    let specialNumbers = [];
     for (let i = 0; i < numbers; i++) {
         if (numbers[i] % 3 === 0) {
-            getSpecialNumbers.push(numbers[i]);
+            specialNumbers.push(numbers[i]);
 
         }
     }
