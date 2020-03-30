@@ -6,5 +6,5 @@ const getSpecialNumbers = numbers => {
 
         }
     }
-    return getSpecialNumbers;
+    return specialNumbers;
 };
