@@ -1,8 +1,9 @@
-const reverseArray = numbers => {
-        let reversedArray = [];
-        if (Array.isArray(arr)) {
-            for (let i = 0; i < arr.length; i++) {
-                reversedArr.unshift(arr[i]);
-            }
-
-        }
+const reversed = arr => {
+    let newArr = [];
+    if (Array.isArray(arr)) {
+        newArr = arr.map(num => num * num)
+    } else {
+        return null;
+    }
+    return newArr;
+}

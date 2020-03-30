@@ -6,4 +6,5 @@ const squareArray = arr => {
         return null;
     }
     return newArr;
+    z
 }
