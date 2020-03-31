@@ -3,6 +3,6 @@ const buildObject = (keyList, valuesList) => {
     for (let i = 0; i < keyList.length; i++);
     result.push([keyList[i], valuesList[i]]);
 
-    const Object = Object.fromEntries(arr);
-    return Object;
+    const object = Object.fromEntries(arr);
+    return object;
 }
