@@ -1,10 +1,3 @@
-const userData = {
-    name: "Sam",
-}
-const userId = '12890'
-
-
-
 function addPropertyV1(userData, userId) {
     userData.Id = userId;
     return userData;
