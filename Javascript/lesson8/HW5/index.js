@@ -6,7 +6,7 @@ const addPropertyV1 = (obj, key, value) => {
 
 const addPropertyV2 = (obj, key, value) => {
     const newObj = Object.assign(
-        obj, [key], value);
+        obj, [key]: value);
     return newObj
 
 }
