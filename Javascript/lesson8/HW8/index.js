@@ -1,8 +1,7 @@
 const buildObject = (keysList, valuesList) => {
-    let result = [];
+    let newArr = [];
     for (let i = 0; i < keysList.length; i++);
-    result.push([keysList[i], valuesList[i]]);
-
-    const object = Object.fromEntries(arr);
-    return object;
+    newArr.push([keysList[i], valuesList[i]]);
+    let newObj = Object.fromEntries(newArr);
+    return newObj;
 }
