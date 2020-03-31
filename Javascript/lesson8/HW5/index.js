@@ -1,15 +1,30 @@
-function addPropertyV1(obj, key, value) {
+const addPropertyV1 = (obj, key, value) => {
+    obj[key] = value;
+    return obj
 
 }
 
-function addPropertyV2(obj, key, value) {
+const addPropertyV2 = (obj, key, value) => {
+    const newObj = Object.assign(
+        obj, [key], value);
+    return newObj
 
 }
 
-function addPropertyV3(obj, key, value) {
+const addPropertyV3 = (obj, key, value) => {
+    const newObj = Object.assign({}, obj, {
+        [key]: value
+    });
+    newObj[key] = value;
+    return newObj;
 
 }
 
-function addPropertyV4(obj, key, value) {
-
+const addPropertyV4 = (obj, key, value) => {
+    const newObj = Object.assign({
+        ...obj
+    }, {
+        [key]: value
+    });
+    return newObj;
 }
