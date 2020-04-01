@@ -1,9 +1,8 @@
- const getAdults = (object) => {
-     const adults = {};
-     for (let age in object) {
-         if (object[age] >= 18) {
-             adults[age] = object[age]
-         }
-     }
-     return adults;
+ const getAdults = userobject => {
+     const arr = Object.defineProperties(userObj)
+     const filteredUsersArray = filteredUsersArray
+         .filter(user => user[1] >= 18);
+     const
+
+
  }
