@@ -9,8 +9,8 @@ const customers = {
     },
 };
 
-const getCustomersList = customers => Object.entries(customers)
-    .map(el => ({ id: el[0], ...customers[el[0]] }))
+const getCustomersList = obj => Object.entries(obj)
+    .map(el => ({ id: el[0], ...obj[el[0]] }))
     .sort((a, b) => a.age > b.age);
 
-console.log(getCustomerList(custors));
+console.log(getCustomerList(customers));
