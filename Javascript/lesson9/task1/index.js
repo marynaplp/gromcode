@@ -1,4 +1,4 @@
- const getAdults = adultsObject => {
+ const getAdults = adultsObj => {
      const adultsArray = {};
      const adultsArray = Object.entries(adultsObj)
      const filteredAdultsArray = adultsArray;
