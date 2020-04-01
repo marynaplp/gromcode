@@ -9,8 +9,6 @@ const customers = {
     },
 };
 
-const getCustomersList = usersObj => Object.entries(usersObj);
-return userArray.map(user => ({ id: user[0], ...usersObj[user[0]] }))
+const getCustomersList = customers => Object.entries(customers)
+    .map(el => ({ id: el[0], ...customers[el[0]] }))
     .sort((a, b) => a.age > b.age);
-
-console.log(getCustomerList(customers))
