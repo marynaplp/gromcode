@@ -1,4 +1,4 @@
-//const Obj = { 'John Doe': 19, 'Tom': 17, 'Bob': 18 };
+const getAdults = { 'John Doe': 19, 'Tom': 17, 'Bob': 18 };
 
 const getAdults = (object) => {
     const getAdults = {};
