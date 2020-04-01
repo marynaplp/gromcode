@@ -1,11 +1,11 @@
-let Obj = { 'John Doe': 19, 'Tom': 17, 'Bob': 18 };
+const Obj = { 'John Doe': 19, 'Tom': 17, 'Bob': 18 };
 
-let getAdults = (object) => {
-    let adults = {};
+const getAdults = (object) => {
+    const getAdults = {};
     for (let age in object) {
         if (age => 18) {
             adults[age] = obj[age]
         }
     }
-    return adults;
+    return getAdults;
 }
