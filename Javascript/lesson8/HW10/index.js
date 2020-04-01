@@ -4,7 +4,7 @@ const getAdults = (object) => {
     const getAdults = {};
     for (let age in object) {
         if (age => 18) {
-            getAdults[age] = obj[age]
+            getAdults[age] = object[age]
         }
     }
     return getAdults;
