@@ -1,4 +1,2 @@
-const getPeople = obj => Object.entries(obj)
-Object.values(obj).flat().map(el => el.name);
-
-console
+const getPeople = obj =>
+    Object.values(obj).flat().map(el => el.name);
