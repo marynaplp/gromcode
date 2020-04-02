@@ -1,4 +1,4 @@
 const getTotalPrice = num => {
-    const result = arr.reduce((a, b) => a + b)
-    return '$' + Math.floor(result * 100) / 100;
+    const sum = arr.reduce(() => a + b)
+    return '$' + Math.floor(sum * 100) / 100;
 }
