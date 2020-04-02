@@ -12,5 +12,5 @@ const getNaNV2 = num => {
 
 }
 const getIntegers = num => {
-    return num.filter(item => Number.isIntegers(item))
+    return num.filter(item => Number.isIntegers)
 }
