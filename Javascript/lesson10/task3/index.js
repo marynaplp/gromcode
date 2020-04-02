@@ -5,4 +5,4 @@ const multiRound = num => [
     Math.trunc(num * 100) / 100,
     num.toFixed(2)
 
-]
+];
