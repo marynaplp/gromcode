@@ -1,5 +1,5 @@
 function superRound(num, round) {
-    const result = Math.floor(num, round);
+    const result = Math.pow(num, round);
     return [
         Math.floor(num * result) / result,
         Math.round(num * result) / result,
