@@ -1,5 +1,5 @@
 const getParsedIntegers = arr => {
-    return arr.map(item => Number.parselnt(item))
+    return arr.map(item => Number.parseInt(item))
 }
 
 const getParsedIntegersV2 = arr => {
