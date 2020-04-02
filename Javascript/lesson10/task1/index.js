@@ -8,7 +8,7 @@ const getNaN = num => {
     return num.filter(item => Number.isNaN(item))
 }
 const getNaNV2 = num => {
-    return num.filter(item => Number.isNaN(item))
+    return num.filter(item => isNaN(item))
 
 }
 const getIntegers = num => {
