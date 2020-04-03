@@ -1,4 +1,4 @@
-const splitString = (text, num = 10) => {
+const splitString = (str, num = 10) => {
     const strArr = [];
     let startPosition = 0;
 
