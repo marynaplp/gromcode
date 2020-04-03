@@ -7,7 +7,7 @@ let contacts = [{
         phoneNumber: '799-02-99',
     },
 ]
-
+let boolean = true;
 
 const sortContacts = (contacts, boolean) => {
     if (!Array.isArray(contacts)) {
@@ -16,11 +16,11 @@ const sortContacts = (contacts, boolean) => {
 
     const result = contacts
         .sort((a, b) => {
-            return a.localeCompare(b);
+            return a.name.localeCompare(b.name);
         });
-    if (boolean === false) {
+    if (boolean == false) {
         contacts.sort((a, b) => {
-            return b.localeCompare(a);
+            return b.name.localeCompare(a.name);
         })
     }
 
