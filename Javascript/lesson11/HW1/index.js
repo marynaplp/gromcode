@@ -10,12 +10,12 @@ const splitString = (str, len = 10) => {
         if (chunk.length === 0) {
             break;
         }
-        if (chunk.length < num) {
+        if (chunk.length < len) {
             chunk = chunk + ".".repeat(len - chunk.length);
 
         }
         strArr.push(chunk.slice(0));
-        startPosition += num;
+        startPosition += 10;
     }
     return strtArr;
 }
