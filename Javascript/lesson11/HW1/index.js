@@ -15,7 +15,7 @@ const splitString = (str, len = 10) => {
 
         }
         strArr.push(chunk.slice(0));
-        startPosition += 10;
+        startPosition += len;
     }
     return strtArr;
 }
