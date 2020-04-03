@@ -3,8 +3,8 @@ let contacts = [{
         phoneNumber: '777-12-99',
     },
     {
-        name: 'Tom',
-        phoneNumber: '777-12-99',
+        name: 'Maryna',
+        phoneNumber: '799-02-99',
     },
 ]
 
