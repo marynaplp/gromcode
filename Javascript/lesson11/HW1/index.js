@@ -2,7 +2,7 @@ const splitString = (str, num = 10) => {
     const strArr = [];
     let startPosition = 0;
 
-    if (text === !String) {
+    if (string === !String) {
         return null;
     }
     while (true) {
