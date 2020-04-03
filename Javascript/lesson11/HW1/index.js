@@ -6,7 +6,7 @@ const splitString = (str, num = 10) => {
         return null;
     }
     while (true) {
-        let chunk = str.substr(startPosition, len);
+        let chunk = str.substr(startPosition, num);
         if (chunk.length === 0) {
             break;
         }
