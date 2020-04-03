@@ -11,7 +11,7 @@ const splitText = (text, len) => {
         }
 
     }
-    if (len === underfined) {
+    if (len === undefined) {
         strArr.push(chunk[0].toUpperCase() + chulk.slice(1));
         startPosition += 10;
 
