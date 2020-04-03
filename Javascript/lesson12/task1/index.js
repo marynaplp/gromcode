@@ -1,22 +1,22 @@
 const calc = expression => {
-    const [a, operator, a] = expression.split('');
+    const [a, operator, b] = expression.split('');
     let result;
     switch (operator) {
         case '+':
-            result = Number(a[0]) + +a[2];
+            result = Number(a) + +b;
             break;
         case '-':
-            result = a[0] - a[2];
+            result = a - b;
             break;
         case '*':
-            result = a[0] * a[2];
+            result = a * b;
             break;
 
         case '/':
-            result = a[0] * a[2];
+            result = a / b;
             break;
 
 
     }
-    return expression + ' = ' + result;
+    return expression = result;
 };
