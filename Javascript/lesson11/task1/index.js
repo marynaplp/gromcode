@@ -1,9 +1,10 @@
 const splitText = (text, len) => {
     const strArr = [];
-    let startPosition = 0;
+
     if (text === !String) {
         return null;
     }
+    let startPosition = 0;
     while (true) {
         let chunk = text.substr(startPosition, len);
         if (chunk.length === 0) {
@@ -12,12 +13,12 @@ const splitText = (text, len) => {
 
     }
     if (len === undefined) {
-        strArr.push(chunk[0].toUpperCase() + chulk.slice(1));
+        strArr.push(chunk[0].toUpperCase() + chunk.slice(1));
         startPosition += 10;
 
     } else {
 
-        strArr.push(chunk[0].toUpperCase() + chulk.slice(1));
+        strArr.push(chunk[0].toUpperCase() + chunk.slice(1));
         startPosition += len;
 
 
