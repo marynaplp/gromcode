@@ -1,7 +1,7 @@
 const calc = expression => {
-    const a = expression.split('');
+    const [a, operator, a] = expression.split('');
     let result;
-    switch (a[1]) {
+    switch (operator) {
         case '+':
             result = Number(a[0]) + +a[2];
             break;
