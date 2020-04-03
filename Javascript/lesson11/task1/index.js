@@ -13,12 +13,12 @@ const splitText = (text, len) => {
 
     }
     if (len === undefined) {
-        strArr.push((chunk[0].toUpperCase()) + chunk.slice(1));
+        strArr.push((chunk[0].toUpperCase()) + chunk.slice(1))
         startPosition += 10;
 
     } else {
 
-        strArr.push((chunk[0].toUpperCase()) + chunk.slice(1));
+        strArr.push((chunk[0].toUpperCase()) + chunk.slice(1))
         startPosition += len;
 
 
@@ -26,3 +26,4 @@ const splitText = (text, len) => {
     return strArr.join('\n');
 
 };
+console.log(splitText);
