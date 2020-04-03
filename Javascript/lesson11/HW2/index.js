@@ -1,9 +1,9 @@
-const countOccurences = (str, arg) => {
+const countOccurrences = (str, arg) => {
     if (arg === '') {
         return null;
     }
-    const countOccurences = (arg.split(str).length - 1);
-    return countOccurences;
+    const countOccurrences = (arg.split(str).length - 1);
+    return countOccurrences;
 
 
 }
