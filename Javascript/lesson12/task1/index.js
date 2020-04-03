@@ -18,5 +18,5 @@ const calc = expression => {
 
 
     }
-    return `${expression} = ${result}`
+    return `${expression} = ${result}`;
 };
