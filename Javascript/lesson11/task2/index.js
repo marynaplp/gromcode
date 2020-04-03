@@ -1,3 +1,14 @@
+let contacts = [{
+        name: 'Tom',
+        phoneNumber: '777-12-99',
+    },
+    {
+        name: 'Tom',
+        phoneNumber: '777-12-99',
+    },
+]
+
+
 const sortContacts = (contacts, boolean) => {
     if (!Array.isArray(contacts)) {
         return null;
