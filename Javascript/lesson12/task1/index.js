@@ -7,6 +7,16 @@ const calc = expression => {
             break;
         case '-':
             result = a[0] - a[2];
+            break;
+        case '*':
+            result = a[0] * a[2];
+            break;
+
+        case '/':
+            result = a[0] * a[2];
+            break;
+
+
     }
     return expression + ' = ' + result;
 };
