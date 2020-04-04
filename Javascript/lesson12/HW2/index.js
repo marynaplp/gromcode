@@ -5,5 +5,5 @@ const cleanTransactionsList = (arr) => {
             return el;
         }
     });
-    return result.map(item => "$" + (+el).toFixed(2));
+    return result.map(el => "$" + (+el).toFixed(2));
 };
