@@ -1,8 +1,8 @@
 const reverseString = str => {
-    if (str === !String) {
+    if (typeof str === !String) {
         return null;
     }
-    return (splitStr.split('').reverse().join(''));
+    return (str.split('').reverse().join(''));
 
 
 }
