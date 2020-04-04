@@ -1,6 +1,6 @@
 import { getSquaredNumbers, getOddNumbers } from './calculator.js'
 
-it('should get squaed numbers', () => {
+it('should get squared numbers', () => {
     const result = getSquaredNumbers([1, 2, 3]);
     expect(result).toEqual();
 
