@@ -1,7 +1,7 @@
 const cleanTransactionsList = (arr) => {
     let result = arr.filter(el => {
         console.log(Number(el));
-        if (Number(el)) {
+        if (typeof(+el) === 'number' && !isNaN(el)) {
             return el;
         }
     });
