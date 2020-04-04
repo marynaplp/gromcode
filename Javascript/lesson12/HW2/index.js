@@ -1,9 +1,9 @@
 const cleanTransactionsList = (arr) => {
-    let strArray = arr.filter(item => {
-        console.log(Number(item));
-        if (Numbebr(item)) {
-            return item;
+    let result = arr.filter(el => {
+        console.log(Number(el));
+        if (Number(el)) {
+            return el;
         }
     });
-    return strArray.map(item => "$" + (+item).toFixed(2));
+    return result.map(item => "$" + (+el).toFixed(2));
 };
