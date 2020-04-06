@@ -9,4 +9,4 @@ export const sendMessage = (name) => {
 export function sendMessage(text) {
     message = text;
 }
-sendMessage('Ann')
+//sendMessage('Ann')
