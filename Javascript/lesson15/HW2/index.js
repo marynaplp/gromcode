@@ -32,14 +32,13 @@ const createLogger = (obj) => {
         getRecords: type => {
 
             if (type == undefined) {
-                return memo.sort((a, b) => a.dateTime < b.dateTime);
+                return memo.filter(i => i.type == type)
             } else {
-                return memo
-                    .filter(el => el.type == type)
+                return memo.sort((a, b) => a.dateTime < b.dateTime);
             }
 
 
         }
     }
 };
-export { createLogger };
+export { createLogger }
