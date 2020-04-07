@@ -2,7 +2,7 @@
      let message = 'Just learn it!';
      let sender = 'Gromcode';
 
-     function sendMessage(name) {
+     const sendMessage = name => {
 
          console.log(`${name}, ${message}.Your ${sender}`);
      }
