@@ -19,4 +19,5 @@
  const messenger2 = createMessenger();
  messenger2.sendMessage('Tom');
  messenger2.setMessage('Hello');
+
  messenger1.sendMessage('Ann');
