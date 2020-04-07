@@ -11,4 +11,3 @@ module.exports = {
         "import/prefer-default-export": 0,
     },
 };
-export { createLogger };

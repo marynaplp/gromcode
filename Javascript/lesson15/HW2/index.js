@@ -1,4 +1,4 @@
-function createLogger(obj) {
+const createLogger = (obj) => {
     let memo = [];
     return {
         warn: text => {
@@ -43,3 +43,4 @@ function createLogger(obj) {
         }
     }
 };
+export { createLogger };
