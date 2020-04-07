@@ -1,24 +1,29 @@
  export default function createMessenger() {
+
      let message = 'Just learn it!';
      let sender = 'Gromcode';
 
-     const sendMessage = name => {
+     function sendMessage(name) {
+         console.log(`${name}, ${message} Your ${sender}`);
+     };
 
-         console.log(`${name}, ${message}.Your ${sender}`);
-     }
-
-     const setMessage = text => {
+     function setMessage(text) {
          message = text;
-     }
+     };
 
-     const setSender = text => {
+     function setSender(text) {
          sender = text;
-     }
+     };
+
      return {
          sendMessage,
          setMessage,
          setSender,
      };
- };
+ }
  const result = createMessenger();
+
  console.log(result);
+
+ //const result = createMessenger();
+ //console.log(result);
