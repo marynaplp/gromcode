@@ -1,4 +1,4 @@
- const createMessenger = () => {
+ export function createMessenger() {
      let message = 'Hi!'
 
      export function sendMessage(name) {
