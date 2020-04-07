@@ -1,25 +1,25 @@
  export const createLogger = () => {
      let memo = [];
 
-     function warn(elem) {
+     function warn(el) {
          memo.push({
-             message: elem,
+             message: el,
              dateTime: new Date(),
              type: 'warn',
          });
      };
 
-     function error(elem) {
+     function error(el) {
          memo.push({
-             message: elem,
+             message: el,
              dateTime: new Date(),
              type: 'error',
          });
      };
 
-     function log(elem) {
+     function log(el) {
          memo.push({
-             message: elem,
+             message: el,
              dateTime: new Date(),
              type: 'log',
          });
