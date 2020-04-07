@@ -25,10 +25,7 @@ const createLogger = (obj) => {
                 type: 'log',
 
             })
-
         },
-
-
         getRecords: type => {
 
             if (type == undefined) {
@@ -37,8 +34,6 @@ const createLogger = (obj) => {
                 return memo.sort((a, b) => a.dateTime < b.dateTime);
             }
 
-
         }
     }
 };
-export { createLogger }
