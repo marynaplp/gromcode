@@ -4,7 +4,7 @@
      function warn(el) {
          memo.push({
              message: el,
-             dateTime: newDate(),
+             dateTime: new Date(),
              type: 'warn',
          });
      };
@@ -12,7 +12,7 @@
      function error(el) {
          memo.push({
              message: el,
-             dateTime: newDate(),
+             dateTime: new Date(),
              type: 'error',
          });
      };
@@ -20,7 +20,7 @@
      function log(el) {
          memo.push({
              message: el,
-             dateTime: newDate(),
+             dateTime: new Date(),
              type: 'log',
          });
      };
