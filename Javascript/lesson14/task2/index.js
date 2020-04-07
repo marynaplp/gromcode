@@ -7,11 +7,11 @@
          console.log(`${name}, ${message}.Your ${sender}`);
      }
 
-     function setMessage(text) {
+     const setMessage = text => {
          message = text;
      }
 
-     function setSender(text) {
+     const setSender = text => {
          sender = text;
      }
      return {
@@ -20,3 +20,5 @@
          setSender,
      };
  };
+ const result = createMessenger();
+ console.log(result);
