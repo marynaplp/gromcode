@@ -1,12 +1,12 @@
  const createMessenger = () => {
      let message = 'Hi!'
 
-     function sendMessage(name) {
+     export function sendMessage(name) {
          const sender = 'Gromcode';
-         console.log(`${name}, ${message}.You ${sender}`)
+         console.log(`${name}, ${message}.Your ${sender}`)
      }
 
-     function setMessage(text) {
+     export function setMessage(text) {
          message = test;
      }
      return {
