@@ -1,4 +1,4 @@
-const createLogger = (obj) => {
+export const createLogger = () => {
     let memo = [];
     return {
         warn: text => {
@@ -26,7 +26,7 @@ const createLogger = (obj) => {
 
             })
         },
-        getRecords: type => {
+        getRecords = type => {
 
             if (type == undefined) {
                 return memo.filter(i => i.type == type).sort((a, b) => a.dateTime < b.dateTime);
