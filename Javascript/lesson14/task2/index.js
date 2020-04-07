@@ -1,5 +1,6 @@
-let message = 'Hi!'
 export const createMessanger = () => {
+    let message = 'Hi!'
+
     function sendMessage(name) {
         const sender = 'Gromcode';
         console.log(`${name}, ${message}.You ${sender}`)
