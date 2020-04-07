@@ -36,4 +36,11 @@
              return memo.sort((a, b) => b.dateTime - a.dateTime);
          };
      };
+
+     return {
+         warn,
+         error,
+         log,
+         getRecords,
+     };
  };
