@@ -1,38 +1,46 @@
- const createLogger = () =>
+ export const createLogger = () => {
      let memo = [];
- return {
-     warn: text => {
+
+     function warn(elem) {
          memo.push({
-             message: text,
-             dateTime: newTime,
+             message: elem,
+             dateTime: new Date(),
              type: 'warn',
+         });
+     };
 
-         })
-     },
-     error: text => {
+     function error(elem) {
          memo.push({
-             message: text,
-             dateTime: newTime,
+             message: elem,
+             dateTime: new Date(),
              type: 'error',
+         });
+     };
 
-
-         })
-     },
-     log: text => {
+     function log(elem) {
          memo.push({
-             message: text,
-             dateTime: newTime,
+             message: elem,
+             dateTime: new Date(),
              type: 'log',
+         });
+     };
 
-         })
-     },
-     function getRecords(type) {
+     const getRecords = (type) => {
 
-         if (type == undefined) {
-             return memo.filter(i => i.type == type).sort((a, b) => a.dateTime < b.dateTime);
+         if (type !== undefined) {
+             let result = memo.filter(el => el.type === type)
+                 .sort((a, b) => b.dateTime - a.dateTime);
+             console.log(result)
+             return result;
          } else {
-             return memo.sort((a, b) => a.dateTime < b.dateTime);
-         }
+             return memo.sort((a, b) => b.dateTime - a.dateTime);
+         };
+     };
 
-     }
+     return {
+         warn,
+         error,
+         log,
+         getRecords,
+     };
  };
