@@ -4,7 +4,7 @@
      function warn(el) {
          memo.push({
              message: el,
-             dateTime: new Date(),
+             dateTime: newDate(),
              type: 'warn',
          });
      };
@@ -12,7 +12,7 @@
      function error(el) {
          memo.push({
              message: el,
-             dateTime: new Date(),
+             dateTime: newDate(),
              type: 'error',
          });
      };
@@ -20,7 +20,7 @@
      function log(el) {
          memo.push({
              message: el,
-             dateTime: new Date(),
+             dateTime: newDate(),
              type: 'log',
          });
      };
@@ -35,12 +35,5 @@
          } else {
              return memo.sort((a, b) => b.dateTime - a.dateTime);
          };
-     };
-
-     return {
-         warn,
-         error,
-         log,
-         getRecords,
      };
  };
