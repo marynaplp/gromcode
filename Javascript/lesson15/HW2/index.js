@@ -32,7 +32,7 @@ const createLogger = (obj) => {
         getRecords: type => {
 
             if (type == undefined) {
-                return memo.filter(i => i.type == type)
+                return memo.filter(i => i.type == type).sort((a, b) => a.dateTime < b.dateTime);
             } else {
                 return memo.sort((a, b) => a.dateTime < b.dateTime);
             }
