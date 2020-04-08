@@ -1,4 +1,4 @@
-let foo = 1;
+var foo = 1;
 
 function bar() {
     if (!foo) {
