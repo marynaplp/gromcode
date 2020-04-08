@@ -1,4 +1,4 @@
-function createArrayFunctions(num) {
+function createArrayOfFunctions(num) {
     let arr = [];
     if (num == undefined) return [];
     if (typeof num !== 'number') return null;
@@ -10,5 +10,5 @@ function createArrayFunctions(num) {
     }
     return arr
 }
-console.log(createArrayFunctions)
-export { createArrayFunctions };
+console.log(createArrayOfFunctions)
+export { createArrayOfFunctions };
