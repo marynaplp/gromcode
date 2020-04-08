@@ -9,4 +9,4 @@ function bar() {
 }
 
 let foo = bar();
-export { foo }
+export default foo
