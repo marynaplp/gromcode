@@ -1,4 +1,4 @@
-let a = 17;
+var a = 17;
 
 if (a) {
 
@@ -9,3 +9,5 @@ if (a) {
 }
 
 console.log(a);
+//1
+//17
