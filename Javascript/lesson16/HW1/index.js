@@ -1,7 +1,7 @@
-export const createArrayOfFunctions = (num) => {
+function createArrayOfFunctions(num) {
     let arr = [];
     if (num !== undefined) return [];
-    if (num !== 'number') return null;
+    if (typeof num !== 'number') return null;
     for (let i = 0; i < 10; i++) {
         arr[i] = function() {
             return i;
@@ -10,3 +10,5 @@ export const createArrayOfFunctions = (num) => {
     }
     return arr
 }
+console.log(createArrayFunctions)
+export { createArrayFunctions };
