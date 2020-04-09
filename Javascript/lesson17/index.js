@@ -5,4 +5,4 @@ const user = {
         return (`${this.firstName} ${this.lastName}`);
     }
 };
-user.getFullName();
+export { user }
