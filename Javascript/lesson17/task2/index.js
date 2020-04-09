@@ -10,7 +10,7 @@ const callbackPrompt = {
 
     }
 };
-callbackPrompt.showDeferredPrompt();
+callbackPrompt.showDeferredPrompt(1000);
 
 
 
