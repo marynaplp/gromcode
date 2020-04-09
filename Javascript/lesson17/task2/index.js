@@ -2,7 +2,7 @@ const callbackPrompt = {
     message: 'Tell me your number',
     showPrompt() {
         const phoneNumber = prompt(this.message);
-        return (phoneNumber);
+        console.log(phoneNumber);
 
     },
     showDeferredPrompt(ms) {
@@ -11,9 +11,4 @@ const callbackPrompt = {
     }
 };
 callbackPrompt.showDeferredPrompt(1000);
-
-
-
-
-
 export { callbackPrompt }
