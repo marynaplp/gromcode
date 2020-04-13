@@ -18,7 +18,9 @@ sayName.apply(student);
 const student2 = {
     name: 'Bruce',
 };
-sayName.apply(student2);
+sayName.apply({
+    name: 'Bruce'
+});
 
 /* ===> 2 <=== */
 const company = {
@@ -33,7 +35,7 @@ function greeting(firstName, lastName) {
 // 'Hello, Bob Marley. Welcome to the Microsoft'
 // используйте объект company
 // ... your code here
-greeting.apply(company, 'Bob', 'Marley');
+greeting.apply(company, ['Bob', 'Marley']);
 
 /* ===> 3 <=== */
 const country = {
@@ -50,7 +52,7 @@ function getPopulation(population) {
 // 43000 передавайте в виде числа
 // используйте объект country
 // ... your code here
-let result = getPopulation.apply(country, 43000);
+let result = getPopulation.apply(country, [43000]);
 console.log(result);
 
 
@@ -77,4 +79,4 @@ const anotherTransaction = {
 // '400 USD - buy on NASDAQ'
 // используйте объект anotherTransaction как контекст
 // ... your code here
-transaction.printTransaction.apply(anotherTransaction);
+transaction.printTransaction.apply([anotherTransaction]);
