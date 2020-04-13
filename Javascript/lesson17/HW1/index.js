@@ -14,8 +14,9 @@ sayName.call(student)
 
 // вызовите ф-цию sayName так, чтобы в консоль вывелось имя 'Bruce' (используйте другой объект)
 // ... your code here
+
 const student2 = {
-    name: 'Tom',
+    name: 'Bruce',
 };
 sayName.call(student2)
 
@@ -52,7 +53,7 @@ function getPopulation(population) {
 // используйте объект country
 // ... your code here
 
-getPopulation.call(country, 43000);
+getPopulation.call(countryName, 43000);
 
 /* ===> 4 <=== */
 const transaction = {
