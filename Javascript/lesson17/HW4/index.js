@@ -5,7 +5,7 @@ const user = {
         return (`${this.firstName} ${this.lastName}`);
     },
     setFullName(getFullName) {
-        let arr = getFullName.split('');
+        let arr = getFullName.split(' ');
         this.firstName = arr[0];
         this.lastName = arr[1];
     }
