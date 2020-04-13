@@ -17,7 +17,7 @@ export const sayStudentName = sayName.bind(student);
  * создайте ф-цию sayBruceName которая будет выводить в консоль имя 'Bruce'
  * используйте ф-цию sayName и .bind с нужным объектом
  */
-export const ssayBruceName = sayName.bind({
+export const sayBruceName = sayName.bind({
     name: 'Bruce'
 });
 
