@@ -53,7 +53,9 @@ function getPopulation(population) {
 // используйте объект country
 // ... your code here
 
-getPopulation.call(country, [43000]);
+let result = getPopulation.call(country, 43000);
+console.log(result);
+
 
 /* ===> 4 <=== */
 const transaction = {
