@@ -88,5 +88,5 @@ const anotherTransaction = {
  * используйте метод transaction.printTransaction и .bind с нужным объектом
  * printSpecialTransaction не должна принимать ни одного аргумента
  */
-export const printSpecialTransaction = getPopulation.bind(country, 43000);
+export const printSpecialTransaction = getPopulation.bind(anotherTransaction);
 printSpecialTransaction()
