@@ -10,5 +10,5 @@ const wallet = {
         return Math.min.apply(null, this.transitions);
     }
 
-}
+};
 export { wallet };
