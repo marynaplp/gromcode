@@ -1,6 +1,6 @@
-const sumOfSquares = (num) => {
-    return [].reduce.apply(arguments, (sum, n) => {
-        return (n * n) + sum;
+const sumOfSquares = () => {
+    return [].reduce.apply(arguments, (sum, el) => {
+        return (el * el) + sum;
     }, 0)
 }
 export { sumOfSquares }
