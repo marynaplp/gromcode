@@ -1,10 +1,10 @@
 function safeCalls(allCalls) {
-    function withMemory() {
+    function withMemory(args) {
 
-        withMemory.calls.push([...arguments]);
-        return allCalls.calls.apply(this, arguments);
+        withMemory.calls.push([...args]);
+        return allCalls.calls(this, args);
     }
     withMemory.calls = [];
     return withMemory;
 }
-export { safeCalls };
+export { safeCalls }
