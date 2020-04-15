@@ -1,4 +1,4 @@
-function safeCalls(allCalls) {
+function saveCalls(allCalls) {
     function withMemory(args) {
 
         withMemory.calls.push([...args]);
@@ -7,4 +7,4 @@ function safeCalls(allCalls) {
     withMemory.calls = [];
     return withMemory;
 }
-export { safeCalls }
+export { saveCalls }
