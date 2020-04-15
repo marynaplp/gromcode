@@ -1,5 +1,5 @@
 'use strict';
-export const event = {
+const event = {
     guests: [{
         name: 'John',
         age: 18,
@@ -8,7 +8,7 @@ export const event = {
     message: "Welcome to the party",
     getInvitations() {
         return this.guests
-            .filter(({ age }) => age >= 18)
+            .filter(({ age }) => age <= 18)
             .map(({ name, email }) => ({
                 text: `Dear ${name}!.${this.message}!`,
                 email
@@ -17,3 +17,5 @@ export const event = {
     }
 }
 console.log(event.getInvitations());
+
+export { event };
