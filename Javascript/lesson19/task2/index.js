@@ -1,12 +1,12 @@
 const getOwnProps = obj => {
-    const Array = [];
+    const arr = [];
     for (let prop in obj) {
         if (obj.hasOwnProperty(prop) && typeof obj[prop] !== 'function') {
-            Array.push(prop);
+            arr.push(prop);
         }
 
     }
 
-    return Array
+    return arr
 }
 export { getOwnProps }
