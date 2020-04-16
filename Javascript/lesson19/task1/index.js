@@ -1,18 +1,18 @@
-export const vehicle = {
+const vehicle = {
     move() {
         console.log(`${this.name}is moving`)
     },
     stop() {
-        console.log(`${this.name}stopped`)
+        console.log(`${this.name} stopped`)
     }
 };
 
-export const ship = {
+const ship = {
     __proto__: vehicle,
     name: 'Argo',
     startMachine() {
         // method
-        console.log(`${this.name}lifting anchor up`);
+        console.log(`${this.name} lifting anchor up`);
         this.move();
     },
     stopMachine() {
@@ -22,4 +22,4 @@ export const ship = {
     },
 
 };
-console.log(ship)
+export { vehicle, ship };
