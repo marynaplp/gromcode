@@ -11,9 +11,11 @@ export const ship = {
     __proto__: vehicle,
     name: 'Argo',
     startMachine() {
+        ship.move() // method
         console.log(`${this.name}lifting anchor up`);
     },
     stopMachine() {
+        ship.stop();
         console.log(`${this.name} lifting anchor down`);
     },
 
