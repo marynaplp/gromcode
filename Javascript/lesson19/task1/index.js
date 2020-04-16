@@ -1,4 +1,4 @@
-const vehicle = {
+export const vehicle = {
     move() {
         console.log('is moving')
     },
@@ -7,7 +7,7 @@ const vehicle = {
     }
 };
 
-const ship = {
+export const ship = {
     name: 'Argo',
     startMachine() {
         console.log('lifting anchor up');
