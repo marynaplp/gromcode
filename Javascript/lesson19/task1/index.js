@@ -1,4 +1,4 @@
-const vechicle = {
+const vehicle = {
     move() {
         console.log('is moving')
     },
@@ -17,3 +17,4 @@ const ship = {
     },
     __proto__: vehicle
 };
+console.log(ship)
