@@ -4,7 +4,7 @@ user = {
     get fullName() {
         return `${this.firstName}${this.lastName}`;
     },
-    setFullName(value) {
+    set fullName(value) {
         const [firstName, lastName] = value.split(' '); // даст массив 
         this.firstName = firstName; // присвоить соответсвующее ствойство  обьекта 
         this.lastName = lastName;
