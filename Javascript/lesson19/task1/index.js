@@ -11,8 +11,9 @@ const vehicle = {
 const ship = {
     startMachine() {
         // method
-        console.log(`${this.name} lifting anchor up`);
         this.move();
+        console.log(`${this.name} lifting anchor up`);
+
     },
     stopMachine() {
         this.stop();
