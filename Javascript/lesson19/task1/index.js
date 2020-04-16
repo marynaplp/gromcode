@@ -20,6 +20,6 @@ const ship = {
         this.stop();
         console.log(`${this.name} lifting anchor down`);
     },
-    __proto__: vehicle,
+    __proto__: vehicle, // является getter и setter  для свойства  [ Prototype]
 };
 export { vehicle, ship };
