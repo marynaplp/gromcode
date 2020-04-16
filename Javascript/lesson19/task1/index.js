@@ -1,18 +1,19 @@
 const vehicle = {
     name: 'Argo',
     move() {
-        console.log(`${this.name}is moving`)
+        console.log(`${this.name} is moving`);
     },
     stop() {
-        console.log(`${this.name} stopped`)
-    }
+        console.log(`${this.name} stopped`);
+    },
 };
 
 const ship = {
     startMachine() {
+        hasWheeles: false;
         // method
-        this.move();
         console.log(`${this.name} lifting anchor up`);
+        this.move();
 
     },
     stopMachine() {
