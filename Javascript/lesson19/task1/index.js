@@ -1,20 +1,21 @@
 export const vehicle = {
     move() {
-        console.log('is moving')
+        console.log(`${name}is moving`)
     },
     stop() {
-        console.log('stopped')
+        console.log(`${name}stopped`)
     }
 };
 
 export const ship = {
+    __proto__: vehicle,
     name: 'Argo',
     startMachine() {
-        console.log('lifting anchor up');
+        console.log(`${name}lifting anchor up`);
     },
     stopMachine() {
-        console.log('lifting anchor down');
+        console.log(`${name} lifting anchor down`);
     },
-    __proto__: vehicle
+
 };
 console.log(ship)
