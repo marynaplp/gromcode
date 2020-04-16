@@ -9,7 +9,6 @@ const vehicle = {
 };
 
 const ship = {
-
     startMachine() {
         // method
         console.log(`${this.name} lifting anchor up`);
