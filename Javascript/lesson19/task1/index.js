@@ -9,7 +9,7 @@ const vehicle = {
 };
 
 const ship = {
-    __proto__: vehicle,
+
     startMachine() {
         // method
         console.log(`${this.name} lifting anchor up`);
@@ -19,6 +19,6 @@ const ship = {
         this.stop();
         console.log(`${this.name} lifting anchor down`);
     },
-
+    __proto__: vehicle,
 };
 export { vehicle, ship };
