@@ -3,16 +3,16 @@ class Order {
         this.id = `${Math.random()}`;
         this.price = price;
         this.dateCreated = new Date();
-        this.isConfirmed = boolean;
+        this.isConfirmed = false;
         this.dateConfirmed = null;
         this.city = city;
         this.type = type;
 
     }
     checkPrice() {
-        if (this.price > 1000) {
+        if (this.price > 1000)
             return true;
-        } else return false;
+        return false;
 
     }
     confirmOrder() {
@@ -20,9 +20,9 @@ class Order {
         this.dateConfirmed = new Date();
     }
     isValidType() {
-        if (this.type === 'Buy' || this.type === 'Sell') {
+        if (this.type === 'Buy' || this.type === 'Sell')
             return true;
-        } else return false;
+        return false;
     }
-}
+};
 export { Order }
