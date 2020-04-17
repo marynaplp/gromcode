@@ -21,7 +21,7 @@ class Order {
     }
     isValidType() {
         if (this.type === 'Buy' || this.type === 'Sell') {
-            return true
+            return true;
         } else return false;
     }
 }
