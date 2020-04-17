@@ -20,7 +20,7 @@ class Order {
         this.dateConfirmed = new Date();
     }
     isValidType() {
-        if (this.type === 'Buy' || this.type === 'Sell')
+        if (this.type == 'Buy' || this.type == 'Sell')
             return true;
         return false;
     }
