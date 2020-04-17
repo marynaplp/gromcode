@@ -5,7 +5,7 @@ class User {
 
     }
     sayHi() {
-        console.log(`Hi, Iam ${this.name}`);
+        console.log(`Hi, I am ${this.name}`);
     }
     requestNewPhoto() {
         console.log(`New photo request was sent for ${this.name}`);
@@ -16,9 +16,9 @@ class User {
         if (age >= 25)
             console.log(`New photo request was sent for ${this.name}`)
         return age
-    }
+    };
     static createEmpty() {
-        return User()
+        return User('')
 
     }
 }
