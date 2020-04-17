@@ -18,7 +18,7 @@ class User {
         return age
     };
     static createEmpty() {
-        return new User('', number);
+        return new User('', null);
 
     }
 }
