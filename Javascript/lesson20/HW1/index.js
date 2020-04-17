@@ -5,6 +5,7 @@ class Order {
         this.dateCreated = new Date();
         this.isConfirmed = false();
         this.dateConfirmed = new Time();
+        this.city = city;
         this.type = type;
 
     }
