@@ -3,7 +3,7 @@ class Order {
         this.id = `${Math.random()}`;
         this.price = price;
         this.dateCreated = new Date();
-        this.isConfirmed = place();
+        this.isConfirmed = false();
         this.dateConfirmed = new Time();
         this.type = type;
 
@@ -16,7 +16,7 @@ class Order {
     }
     confirmOrder() {
         this.isConfirmed = true;
-        this.dateConfirmed = new Time();
+        this.dateConfirmed = new Date();
     }
     isValidType() {
         if (this.type === 'Buy' || this.type === 'Sell') {
