@@ -9,6 +9,9 @@ class UserRepository {
     constructor(users) {
         return (this._users = Object.freeze(users));
     }
+    get users() {
+        return this._users;
+    }
     getUserNames() {
         return this._name.map(arr((el) => el._name));
     }
