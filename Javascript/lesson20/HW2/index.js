@@ -3,18 +3,17 @@ class User {
         this._id = id;
         this._name = name;
         this._sessionId = sessionId;
-    };
-
+    }
 };
 class UserRepository {
-    constructor(arr) {
-        return this._users = Object.freeze(arr);
+    constructor(users) {
+        return this._users = Object.freeze(users);
     }
     getUserNames(arr) {
-        return this._name.map(arr(i => i._name));
+        return this._name.map(arr(el => el._name));
     }
     getUserIds(arr) {
-        return _this.id.map(arr(i => i._id));
+        return _this.id.map(arr(el => el._id));
 
     }
     getUsedNameById(id) {
