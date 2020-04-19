@@ -19,8 +19,11 @@ class UserRepository {
         return _this.id.map(arr((el) => el._id));
     }
     getUsedNameById(id) {
-        let findById = this._users.find((i) => i._id === _userId);
-        return findById;
+        for (let i of this._users) {
+            if (i.id === id)
+                return i.name;
+        }
+
     }
 }
 export { User, UserRepository };
