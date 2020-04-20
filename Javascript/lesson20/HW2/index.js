@@ -16,7 +16,7 @@ class UserRepository {
         return this._name.map(arr((el) => el._name));
     }
     getUserIds() {
-        return _this.id.map(arr((el) => el._id));
+        return this._id.map(arr((el) => el._id));
     }
     getUsedNameById(id) {
         for (let i of this._users) {
