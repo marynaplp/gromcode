@@ -22,10 +22,10 @@ class UserRepository {
         return this._users;
     }
     getUserNames() {
-        return this._name.map(arr((el) => el._name));
+        return this._users.map(arr((el) => el._name));
     }
     getUserIds() {
-        return this._id.map(arr((el) => el._id));
+        return this._users.map(arr((el) => el._id));
     }
     getUserNameById(id) {
         for (let i of this._users) {
