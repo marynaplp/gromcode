@@ -1,6 +1,6 @@
 function getItemsList() {
     const itemsList = document.querySelectorAll('.technoly')
-    console.dir(elementsList)
+    console.dir(elementsList);
     return itemsList;
 }
 
