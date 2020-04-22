@@ -1,6 +1,6 @@
 function clearList() {
     const emptyList = document.querySelector('.categories')
-    return emptyList.innnerHTML = '';
+    return emptyList.innerHTML = '';
 
 }
 export { clearList };
