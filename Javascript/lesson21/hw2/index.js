@@ -1,5 +1,5 @@
 function getItemsList() {
-    const elementsList = document.querySelectorAll('.technoly')
+    const elementsList = document.querySelectorAll('.technology')
     console.dir(elementsList);
     return elementsList
 }
