@@ -1,7 +1,7 @@
 function getItemsList() {
-    const itemsList = document.querySelectorAll('.technoly')
+    const elementsList = document.querySelectorAll('.technoly')
     console.dir(elementsList);
-    return itemsList;
+    return elementsList
 }
 
 function getItemsArray() {
