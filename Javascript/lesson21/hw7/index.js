@@ -1,7 +1,7 @@
 function createButton(buttonText) {
     const newButton = document.createElement('button');
-    newButton.textContent = '${text}';
-    const buttonElem = document.querySelector('button');
+    newButton.textContent = buttonText;
+    const buttonElem = document.querySelector('body');
     buttonElem.append(newButton);
 
 }
