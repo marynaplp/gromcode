@@ -1,6 +1,6 @@
 function getTitleElement() {
     const titleElement = document.querySelector('.title')
-    console.dir(titleElem)
+    console.dir(titleElement)
     return titleElement;
 }
 
