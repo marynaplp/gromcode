@@ -1,26 +1,26 @@
 function finishList() {
-    const newItem = document.createElement('li');
-    newItem.textContent = '1';
+    const oneItem = document.createElement('li');
+    oneItem.textContent = '1';
     const listElem = document.querySelector('ul');
-    listElem.prepend(newItem);
+    listElem.prepend(oneItem);
 
-    const newItem = document.createElement('li');
-    newItem.textContent = '4';
+    const fourItem = document.createElement('li');
+    fourItem.textContent = '4';
     const listElem = document.querySelector('.special');
-    listElem.before(newItem);
+    listElem.before(fourItem);
 
 
-    const newItem = document.createElement('li');
-    newItem.textContent = '6';
+    const sixItem = document.createElement('li');
+    sixItem.textContent = '6';
     const listElem = document.querySelector('.special');
-    listElem.after(newItem);
+    listElem.after(sixItem);
 
 
 
-    const newItem = document.createElement('li');
-    newItem.textContent = '8';
+    const eightItem = document.createElement('li');
+    eightItem.textContent = '8';
     const listElem = document.querySelector('ul');
-    listElem.append(newItem);
+    listElem.append(eightItem);
 
 
 }
