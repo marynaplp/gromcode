@@ -1,26 +1,22 @@
 function finishList() {
     const oneItem = document.createElement('li');
     oneItem.textContent = '1';
-    const listElem = document.querySelector('ul');
-    listElem.prepend(oneItem);
+    document.querySelector('ul').prepend(oneItem);
 
     const fourItem = document.createElement('li');
     fourItem.textContent = '4';
-    const listElem = document.querySelector('.special');
-    listElem.before(fourItem);
+    document.querySelector('.special').before(fourItem);
 
 
     const sixItem = document.createElement('li');
     sixItem.textContent = '6';
-    const listElem = document.querySelector('.special');
-    listElem.after(sixItem);
+    document.querySelector('.special').after(sixItem);
 
 
 
     const eightItem = document.createElement('li');
     eightItem.textContent = '8';
-    const listElem = document.querySelector('ul');
-    listElem.append(eightItem);
+    document.querySelector('ul').append(eightItem);
 
 
 }
