@@ -20,7 +20,7 @@ const logGreyP = logTarget.bind(null, 'P', 'grey');
 const logGreySpan = logTarget.bind(null, 'SPAN', 'grey');
 
 
-function attachEventList() {
+const attachEventList = () => {
     divElem.addEventListener('click', logGreyDiv, true);
     divElem.addEventListener('click', logGreenDiv);
 
@@ -48,7 +48,7 @@ const removeEventList = () => {
 };
 
 
-function clearList() {
+const clearList = () => {
     eventsListElem.innerHTML = '';
 };
 
