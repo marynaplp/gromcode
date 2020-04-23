@@ -1,5 +1,5 @@
 function manageClasses() {
-    const oneItem = document.querySelector('one');
+    const oneItem = document.querySelector('.one');
     oneItem.classList.add('selected');
 
     const twoItem = document.querySelector('.two');
