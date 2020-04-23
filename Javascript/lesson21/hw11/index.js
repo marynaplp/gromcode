@@ -6,4 +6,4 @@ function squaredNumbers() {
         num.dataset.squaredNumber = numSquare;
     }
 };
-export { squaredNumber }
+export { squaredNumbers };
