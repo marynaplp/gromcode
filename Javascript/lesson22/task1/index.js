@@ -22,27 +22,31 @@ const logGreySpan = logTarget.bind(null, 'SPAN', 'grey');
 
 function attachEventList() {
     divElem.addEventListener('click', logGreyDiv, true);
-    divElem.addEventListener('click', logGreenDiv)
+    divElem.addEventListener('click', logGreenDiv);
+
 
     pElem.addEventListener('click', logGreyP, true);
     pElem.addEventListener('click', logGreenP);
 
+
     spanElem.addEventListener('click', logGreySpan, true);
     spanElem.addEventListener('click', logGreenSpan);
-
 };
 
-function removeEventList() {
+
+const removeEventList = () => {
     divElem.removeEventListener('click', logGreyDiv, true);
-    divElem.removeEventListener('click', logGreenDiv)
+    divElem.removeEventListener('click', logGreenDiv);
+
 
     pElem.removeEventListener('click', logGreyP, true);
     pElem.removeEventListener('click', logGreenP);
 
+
     spanElem.removeEventListener('click', logGreySpan, true);
     spanElem.removeEventListener('click', logGreenSpan);
+};
 
-}
 
 function clearList() {
     eventsListElem.innerHTML = '';
