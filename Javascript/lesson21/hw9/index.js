@@ -5,4 +5,6 @@ function finishForm() {
     const setInput = document.querySelector('.login-form');
     setInput.append(input);
     input.setAttribute('type', 'password');
+    input.setAttribute('name', 'password')
 }
+export { finishForm }
