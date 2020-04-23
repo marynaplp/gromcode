@@ -1,6 +1,6 @@
 const createBtn = document.querySelector('.create-btn');
 
 function addEventListener() {
-    alert(done);
+    alert('done');
 }
-createBtn.addEventListener('click', alertDone)
+createBtn.addEventListener('click', () => { alert('done') });
