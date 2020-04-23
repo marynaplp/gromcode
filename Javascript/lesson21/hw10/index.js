@@ -1,16 +1,16 @@
 function manageClasses() {
-    const firstItem = document.querySelector('.one');
-    firstItem.classList.add('selected');
+    const oneItem = document.querySelector('one');
+    oneItem.classList.add('selected');
 
-    const secondItem = document.querySelector('.two');
-    secondItem.classList.remove('selected');
+    const twoItem = document.querySelector('.two');
+    twoItem.classList.remove('selected');
 
-    const thirdItem = document.querySelector('.three');
-    thirdItem.classList.toggle('three_done');
+    const threeItem = document.querySelector('.three');
+    threeItem.classList.toggle('three_done');
 
-    const forthItem = document.querySelector('.four');
-    if (forthItem.getElementByTagName("some-class")) {
-        forthItem.classListadd('another-class');
+    const fourItem = document.querySelector('.four');
+    if (fourItem.getElementByTagName("some-class")) {
+        fourItem.classList.add('another-class');
     }
 }
 
