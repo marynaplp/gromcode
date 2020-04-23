@@ -60,3 +60,4 @@ attachHandlersBtn.addEventListener('click', attachEventList);
 
 
 removeHandlersBtn.addEventListener('click', removeEventList);
+attachEventList();
