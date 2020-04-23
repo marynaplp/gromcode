@@ -8,10 +8,10 @@ function manageClasses() {
     const threeItem = document.querySelector('.three');
     threeItem.classList.toggle('three_done');
 
-    const fourItem = document.querySelector('.four');
-    if (fourItem.getElementByTagName("some-class")) {
+    const fourItem = document.querySelector('.some-class');
+    if (fourItem) {
         fourItem.classList.add('another-class');
     }
-}
+};
 
 export { manageClasses };
