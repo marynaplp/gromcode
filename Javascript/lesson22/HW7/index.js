@@ -1,5 +1,6 @@
-const inPut = document.querySelector('.text-input');
+const inPutValue = document.querySelector('.text-input');
 
-inPut.addEventListener('change', () => {
-    console.log(event.target.value)
-});
+const inPut = (event) => {
+    console.log(event.target.textContent)
+};
+inPutValue.addEventListener('change', inPut)
