@@ -5,5 +5,5 @@ const checkbox = (event) => {
 };
 
 checkBox.addEventListener('change', () => {
-    checkbox.checked ? console.log(true) : console.log(false);
+    checkBox.checked ? console.log(true) : console.log(false);
 });
