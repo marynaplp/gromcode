@@ -1,6 +1,6 @@
 const buttons = document.querySelectorAll('.btn');
 
-function handleClick(event) {
+const handleClick = (event) => {
     console.log(event.target.textContent);
 
     buttons.forEach(button => {
