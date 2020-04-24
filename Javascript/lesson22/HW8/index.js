@@ -3,6 +3,6 @@ const checkbox = (event) => {
     console.log(event.target.checked)
 };
 
-checkbox.addEventListener('change', () => {
-    checkBox.checked ? console.log(true) : console.log(false);
+checkBox.addEventListener('change', () => {
+    checkbox.checked ? console.log(true) : console.log(false);
 });
