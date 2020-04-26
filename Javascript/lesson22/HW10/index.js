@@ -22,6 +22,7 @@ const tasks = [{
 
 const renderListItems = listItems => {
     const listElem = document.querySelector('.list');
+    listElem.innerHTML = "";
 
     const listItemsElems = listItems
         .sort((a, b) => a.done - b.done)
@@ -44,5 +45,20 @@ const renderListItems = listItems => {
         });
     listElem.append(...listItemsElems);
 };
-
 renderListItems(tasks);
+
+const btn = document.querySelector('.create-task-btn');
+
+function addNewTask() {
+    const addTaskInput = document.querySelector('.task-input');
+    if (!addTaskInput.value === "") return false;
+    tasks.push({
+        text: addTaskInput.value,
+        done: false
+    });
+    addTaskInput.value = '';
+    renderListItems(tasks)
+
+}
+btn.addEventListener('click', addNewTask);
+const choiceList = document.querySelector('.list');
