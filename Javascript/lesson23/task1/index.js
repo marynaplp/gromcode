@@ -6,23 +6,21 @@ const passwordErrorElem = document.querySelector('.erroe-text_password');
 
 const isRequired = value => value ?
 
-    undefined :
-    'Required';
+    undefined : 'Required';
 
-const isEmail = value => value.includes('@')
-undefined:
-    'Should be an email';
+const isEmail = value => value.includes('@') ?
+    undefined : 'Should be an email';
 
-const validator = {
+const validatorsByField = {
     email: [isRequered, isEmail],
-    password: [isRequered]
+    password: [isRequired]
 };
 const validate = (fieldName, value) => {
     const validators = validatorsByField[fieldName];
     return validators
         .map(validator => validotor(event.targer.value))
         .filter(errorText => errorText)
-        .join(',');
+        .join(', ');
 
 }
 const onEmailChange = event => {
