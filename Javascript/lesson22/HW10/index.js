@@ -51,13 +51,14 @@ const btn = document.querySelector('.create-task-btn');
 
 function addNewTask() {
     const addTaskInput = document.querySelector('.task-input');
-    if (!addTaskInput.value === "") return false;
 
+    if (!addTaskInput.value) return false;
     tasks.push({
         text: addTaskInput.value,
         done: false
     });
     addTaskInput.value = "";
+
     renderListItems(tasks)
 
 }
