@@ -66,10 +66,12 @@ btn.addEventListener('click', addNewTask);
 
 const taskConfirm = document.querySelector('.list');
 
-function confirmItem(el) {
+function confirmItem(e) {
     const confirmItem = tasks.find(item =>
-        item.text === el.target.parentNode.textContent);
-    confirmItem.done = el.target.checked;
+        item.text === e.target.parentNode.textContent);
+    confirmItem.done = e.target.checked;
+    console.log(confirmItem.checked);
+    console.log(confirmItem.done);
 
     renderListItems(tasks);
 };
