@@ -52,13 +52,24 @@ const btn = document.querySelector('.create-task-btn');
 function addNewTask() {
     const addTaskInput = document.querySelector('.task-input');
     if (!addTaskInput.value === "") return false;
+
     tasks.push({
         text: addTaskInput.value,
         done: false
     });
-    addTaskInput.value = '';
+    addTaskInput.value = "";
     renderListItems(tasks)
 
 }
 btn.addEventListener('click', addNewTask);
-const choiceList = document.querySelector('.list');
+
+const taskConfirm = document.querySelector('.list');
+
+function confirmItem(el) {
+    const confirmItem = tasks.find(item =>
+        item.text === el.target.parentNode.textContent);
+    confirmItem.done = el.target.checked;
+
+    renderListItems(tasks);
+};
+taskConfirm.addEventListener('click', confirmItem);
