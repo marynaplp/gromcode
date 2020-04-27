@@ -24,15 +24,15 @@ const validate = (fieldName, value) => {
 
 }
 const onEmailChange = event => {
-    const errorText = validate('email', event.target.value)
+    const errorText = validate('email', event.target.value);
     emailErrorElem.textContent = errorText;
-}
+};
 const onPasswordChange = event => {
     const errorText = validate('password', event.target.value);
     emailErrorElem.textContent = errorText;
 }
 
-emailInputElem.addEventListener('change', onEmailChange);
+emailInputElem.addEventListener('input', onEmailChange);
 passwordInputElem.addEventListener('input', onPasswordChange);
 
 const formElem = document.querySelector('.login-form');
@@ -40,7 +40,7 @@ const formElem = document.querySelector('.login-form');
 const onFormSubmit = event => {
     event.preventDefault();
     const formData = [...new FormData(formElem)]
-        .reduce((acc, [field, value]) => ({...acc, [field]: value }));
+        .reduce((acc, [field, value]) => ({...acc, [field]: value }), {});
     alert(JSON.stringify(formData));
 };
 formElem.addEventListener('submit', onFormSubmit);
