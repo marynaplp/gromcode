@@ -12,13 +12,13 @@ const isEmail = value => value.includes('@') ?
     undefined : 'Should be an email';
 
 const validatorsByField = {
-    email: [isRequered, isEmail],
+    email: [isRequired, isEmail],
     password: [isRequired]
 };
 const validate = (fieldName, value) => {
     const validators = validatorsByField[fieldName];
     return validators
-        .map(validator => validotor(event.targer.value))
+        .map(validator => validator(event.targer.value))
         .filter(errorText => errorText)
         .join(', ');
 
