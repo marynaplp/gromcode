@@ -18,7 +18,7 @@ const validatorsByField = {
 const validate = (fieldName, value) => {
     const validators = validatorsByField[fieldName];
     return validators
-        .map(validator => validator(event.targer.value))
+        .map(validator => validator(value))
         .filter(errorText => errorText)
         .join(', ');
 
