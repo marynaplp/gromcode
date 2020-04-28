@@ -7,10 +7,10 @@ const getDiff = (startDate, endDate) => {
 
     const diffDay = Math.floor(diff / (1000 * 60 * 60 * 24));
     const diffHour = Math.floor((diff / 1000 / 60 / 60) % 24);
-    const diffmin = Math.floor((diff / 1000 / 60) % 60);
-    const diffsec = Math.floor((diff / 1000) % 60);
+    const diffMin = Math.floor((diff / 1000 / 60) % 60);
+    const diffSec = Math.floor((diff / 1000) % 60);
 
-    return `${diffDay}d ${diffHour}h ${diffmin}m ${diffmin}s`;
+    return `${diffDay}d ${diffHour}h ${diffMin}m ${diffSec}s`;
 };
 
 export {
