@@ -10,4 +10,4 @@ const result = dayOfWeek(new Date(2020, 0, 1), 14);
 
 console.log(result);
 
-//export { dayOfweek }
+export { dayOfweek }
