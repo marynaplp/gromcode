@@ -10,3 +10,4 @@ const getDiff = (startDate, endDate) => {
 
     return (`${diffDays}d, ${diffHours}h, ${diffMin}m,${diffSec}s`)
 }
+export { getDiff }
