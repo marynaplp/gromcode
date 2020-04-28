@@ -3,11 +3,13 @@ const getDiff = (startDate, endDate) => {
 
     if (startDate < endDate)
         result = new Date(startDate) - new Date(endDate);
-    const diffDay = Math.floor(result / 1000 * 60 * 60 * 24);
-    const diffHour = Math.floor((result / (1000 / 60 / 60)) % 24);
-    const diffMin = Math.floor((result / (1000 / 60)) % 60);
-    const diffSec = Math.floor((result / 1000) % 60);
+    const diffDay = parseInt(result / 1000 * 60 * 60 * 24);
+    const diffHour = parseInt((result / (1000 * 60 * 60)) % 24);
+    const diffMin = parseInt((result / (1000 * 60)) % 60);
+    const diffSec = parseInt((result / 1000) % 60);
 
     return `${diffDay}d, ${diffHour}h, ${diffMin}m,${diffSec}s`;
 }
+const newDate = getDiff(startNewDate, endNewDate);
+console.log(newDate);
 export { getDiff }
