@@ -7,7 +7,7 @@ const dayOfWeek = (date, days) => {
     return weekDays[new Date(dateInFuture).getDay()];
 };
 
-const result = dayOfWeek(new Date(2020, 0, 1), n);
+const result = dayOfWeek(new Date(2020, 0, 1), 0);
 
 console.log(result);
 
