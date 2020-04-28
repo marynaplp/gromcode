@@ -1,6 +1,6 @@
 const getDiff = (startDate, endDate) => {
 
-    const diff = new Date(startDate) - new Date(endDate);
+    let diff = new Date(startDate) - new Date(endDate);
 
     if (startDate < endDate)
         diff = new Date(endDate) - new Date(startDate);
