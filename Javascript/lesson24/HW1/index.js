@@ -8,6 +8,6 @@ const getDiff = (startDate, endDate) => {
     const diffMin = parseInt((result / (1000 * 60)) % 60);
     const diffSec = parseInt((result / 1000) % 60);
 
-    return (`${diffDays}d, ${diffHours}h, ${diffMin}m,${diffSec}s`)
+    return `${diffDays}d, ${diffHours}h, ${diffMin}m,${diffSec}s`;
 }
 export { getDiff }
