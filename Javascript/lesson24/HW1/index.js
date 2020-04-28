@@ -1,7 +1,7 @@
 const getDiff = (startDate, endDate) => {
     const result = new Date(startDate) - new Date(endDate);
 
-    if (startDate < new endDate)
+    if (startDate < endDate)
         result = new Date(startDate) - new Date(endDate);
     const diffDays = parseInt(result / 1000 * 60 * 60 * 24);
     const diffHours = parseInt((result / (1000 * 60 * 60)) % 24);
