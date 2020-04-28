@@ -5,12 +5,12 @@ const getDiff = (startDate, endDate) => {
     if (startDate < endDate)
         diff = new Date(endDate) - new Date(startDate);
 
-    const day = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const hour = Math.floor((diff / 1000 / 60 / 60) % 24);
-    const min = Math.floor((diff / 1000 / 60) % 60);
-    const sec = Math.floor((diff / 1000) % 60);
+    const diffDay = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const diffHour = Math.floor((diff / 1000 / 60 / 60) % 24);
+    const diffmin = Math.floor((diff / 1000 / 60) % 60);
+    const diffsec = Math.floor((diff / 1000) % 60);
 
-    return `${day}d ${hour}h ${min}m ${sec}s`;
+    return `${diffDay}d ${diffHour}h ${diffmin}m ${diffmin}s`;
 };
 
 export {
