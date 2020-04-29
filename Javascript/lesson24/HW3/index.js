@@ -77,10 +77,10 @@ btn.addEventListener('click', addNewTask);
 
 const taskConfirm = document.querySelector('.list');
 
-function confirmTask(elem) {
+function confirmTask(e) {
     const confirmTask = tasks.find(item =>
-        item.text === elem.target.parentNode.textContent);
-    confirmTask.done = elem.target.checked;
+        item.text === e.target.parentNode.textContent);
+    confirmTask.done = e.target.checked;
     confirmTask.dateEnd = confirmTask.done ? new Date() : undefined
 
     console.log(confirmTask.checked);
