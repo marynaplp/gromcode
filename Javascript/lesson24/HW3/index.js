@@ -73,7 +73,7 @@ btn.addEventListener('click', addNewTask);
 
 const taskConfirm = document.querySelector('.list');
 
-function checkTask(e) {
+const checkTask = (e) => {
     const checkTask = tasks.find(item =>
         item.text === e.target.parentNode.textContent);
     checkTask.done = e.target.checked;
