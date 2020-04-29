@@ -77,7 +77,7 @@ const addToTask = () => {
         text: createInp.value,
         done: false,
         dateStart: new Date(),
-        dateEnd: new Date(),
+        dateEnd: undefined
     });
     createInp.value = '';
 
