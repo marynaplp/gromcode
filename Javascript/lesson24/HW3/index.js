@@ -54,7 +54,6 @@ const renderListItems = listItems => {
     listElem.append(...listItemsElems);
 };
 renderListItems(tasks);
-
 const taskConfirm = document.querySelector('.list');
 
 const checkTask = (e) => {
@@ -66,7 +65,7 @@ const checkTask = (e) => {
 
     renderListItems(tasks);
 };
-taskConfirm.addEventListener('click', confirmTask);
+taskConfirm.addEventListener('click', checkTask);
 
 const btn = document.querySelector('.create-task-btn');
 const addNewTask = () => {
