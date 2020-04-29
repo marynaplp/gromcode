@@ -71,13 +71,13 @@ const addNewTask = () => {
 btn.addEventListener('click', addNewTask);
 const taskConfirm = document.querySelector('.list');
 
-const checkTask = (e) => {
-    const checkTask = tasks.find(item =>
-        item.text === e.target.parentNode.textContent);
-    checkTask.done = e.target.checked;
-    checkTask.dateEnd = checkTask.done ? new Date() : undefined;
+const confirmList = document.querySelector('.list');
 
-
+function confirmListItem(e) {
+    const confirmListItem = tasks.find(item =>
+        item.text === event.target.parentNode.textContent);
+    confirmListItem.done = event.target.checked
+    confirmListItem.dateEnd = confirmItem.done ? new Date() : undefined;
     renderListItems(tasks);
 };
-taskConfirm.addEventListener('click', checkTask);
+confirmEvent.addEventListener('click', confirmItem);
