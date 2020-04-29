@@ -8,7 +8,7 @@ const studentsBirthDays = students => {
 
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-    const sortedStudents = students.sort((a, b) => new Date(a.birthday).getDate() - new Date(b.birthday).getDate())
+    const sortedStudents = students.sort((a, b) => new Date(a.birthDay).getDate() - new Date(b.birthDay).getDate())
     const newArray = sortedStudents.reduce((acc, {
         name,
         birthday
