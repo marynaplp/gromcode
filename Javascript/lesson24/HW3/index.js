@@ -69,22 +69,22 @@ const renderListItems = listItems => {
 renderListItems(tasks);
 
 
-const createBtn = document.querySelector('.create-task-btn');
+const btn = document.querySelector('.create-task-btn');
 const addToList = () => {
-    const createInp = document.querySelector('.task-input');
-    if (!createInp.value) return false;
+    const createTaskInput = document.querySelector('.task-input');
+    if (!createTaskInput.value) return false;
     tasks.unshift({
         text: createInp.value,
         done: false,
         dateStart: new Date(),
         dateEnd: undefined
     });
-    createInp.value = '';
+    createTaskInput.value = "";
 
 
     renderListItems(tasks);
 }
-createBtn.addEventListener('click', addToList);
+btn.addEventListener('click', addToList);
 
 
 const taskConfirm = document.querySelector('.list');
