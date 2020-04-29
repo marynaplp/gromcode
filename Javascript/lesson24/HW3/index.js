@@ -70,35 +70,30 @@ renderListItems(tasks);
 
 
 const btn = document.querySelector('.create-task-btn');
-const addNewTask = () => {
-        const createInput = document.querySelector('.task-input');
-        if (!createInput.value) return false;
-        tasks.unshift({
-            text: createInp.value,
-            done: false,
-            dateStart: new Date(),
-            dateEnd: undefined
-        });
-        createInput.value = '';
+const addToTask = () => {
+    const createInput = document.querySelector('.task-input');
+    if (!createInput.value) return false;
+    tasks.unshift({
+        text: createInput.value,
+        done: false,
+        dateStart: new Date(),
+        dateEnd: undefined
+    });
+    createInp.value = '';
 
 
-        renderListItems(tasks);
-    }
-    // console.log(createNewTask())
-btn.addEventListener('click', addNewTask);
+    renderListItems(tasks);
+}
+btn.addEventListener('click', addToTask);
 
 
 const taskConfirm = document.querySelector('.list');
 
-function confirmedItem(e) {
-    const confirmedItem = tasks.find(item =>
+function confirmItem(e) {
+    const confirmItem = tasks.find(item =>
         item.text === e.target.parentNode.textContent);
-    confirmedItem.done = e.target.checked
-
-    // console.log(e.target.checked);
-    // console.log(confirm.done);
-
-    confirmedItem.dateEnd = confirmItem.done ? new Date() : undefined;
+    confirmItem.done = e.target.checked
+    confirmItem.dateEnd = confirmItem.done ? new Date() : undefined;
     renderListItems(tasks);
 };
-taskConfirm.addEventListener('click', confirmedItem);
+taskConfirm.addEventListener('click', confirmItem);
