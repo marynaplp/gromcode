@@ -1,28 +1,40 @@
 const tasks = [{
         text: 'Buy milk',
-        done: false
+        done: false,
+        dateStart: new Date(),
+        dateEnd: new Date()
     },
     {
         text: 'Pick up Tom from airport',
-        done: false
+        done: false,
+        dateStart: new Date(),
+        dateEnd: new Date()
     },
     {
         text: 'Visit party',
-        done: false
+        done: false,
+        dateStart: new Date(),
+        dateEnd: undefined
     },
     {
         text: 'Visit doctor',
-        done: true
+        done: true,
+        dateStart: new Date(),
+        dateEnd: new Date()
     },
     {
         text: 'Buy meat',
-        done: true
+        done: true,
+        dateStart: new Date(),
+        dateEnd: new Date()
     },
 ];
 
+
 const renderListItems = listItems => {
     const listElem = document.querySelector('.list');
-    listElem.innerHTML = "";
+    listElem.innerHTML = '';
+
 
     const listItemsElems = listItems
         .sort((a, b) => {
@@ -30,9 +42,9 @@ const renderListItems = listItems => {
                 return a.done - b.done;
             };
             if (a.done) {
-                return new Date(b.endDate) - new Date(a.endDate);
+                return new Date(b.dateEnd) - new Date(a.dateEnd);
             }
-            return new Date(b.startDate) - new Date(a.startDate);
+            return new Date(b.dateStart) - new Date(a.dateStart);
         })
         .map(({
             text,
@@ -49,35 +61,39 @@ const renderListItems = listItems => {
             checkboxElem.classList.add('list__item-checkbox');
             listItemElem.append(checkboxElem, text);
 
+
             return listItemElem;
         });
     listElem.append(...listItemsElems);
 };
 renderListItems(tasks);
 
+
 const btn = document.querySelector('.create-task-btn');
-const addNewTask = () => {
-    const createTaskInput = document.querySelector('.task-input');
-    if (!createTaskInput.value) return false;
+const addToTask = () => {
+    const createInp = document.querySelector('.task-input');
+    if (!createInp.value) return false;
     tasks.unshift({
-        text: createTaskInput.value,
+        text: createInp.value,
         done: false,
-        startDate: new Date(),
-        endDate: new Date(),
+        dateStart: new Date(),
+        dateEnd: new Date(),
     });
-    createTaskInput.value = '';
+    createInp.value = '';
+
 
     renderListItems(tasks);
 }
-btn.addEventListener('click', addNewTask);
+btn.addEventListener('click', addToTask);
+
 
 const taskConfirm = document.querySelector('.list');
 
-const checkTask = (e) => {
-    const checkTask = tasks.find(item =>
+function confirmItem(e) {
+    const confirmItem = tasks.find(item =>
         item.text === e.target.parentNode.textContent);
-    checkTask.done = e.target.checked;
-    checkTask.endDate = checkTask.done ? new Date() : undefined;
+    confirmItem.done = e.target.checked
+    confirmItem.dateEnd = confirmItem.done ? new Date() : undefined;
     renderListItems(tasks);
 };
-taskConfirm.addEventListener('click', checkTask);
+taskConfirm.addEventListener('click', confirmItem);
