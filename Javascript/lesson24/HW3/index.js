@@ -90,4 +90,4 @@ function addNewTask() {
     renderListItems(tasks)
 
 }
-btn.addEventListener('click', confirmTask);
+taskConfirm.addEventListener('click', confirmTask);
