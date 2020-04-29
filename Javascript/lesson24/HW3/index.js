@@ -69,12 +69,12 @@ const renderListItems = listItems => {
 renderListItems(tasks);
 
 
-const btn = document.querySelector('.create-task-btn');
-const addToTask = () => {
-    const createInput = document.querySelector('.task-input');
-    if (!createInput.value) return false;
+const createBtn = document.querySelector('.create-task-btn');
+const addToList = () => {
+    const createInp = document.querySelector('.task-input');
+    if (!createInp.value) return false;
     tasks.unshift({
-        text: createInput.value,
+        text: createInp.value,
         done: false,
         dateStart: new Date(),
         dateEnd: undefined
@@ -84,12 +84,11 @@ const addToTask = () => {
 
     renderListItems(tasks);
 }
-btn.addEventListener('click', addToTask);
+createBtn.addEventListener('click', addToList);
 
 
 const taskConfirm = document.querySelector('.list');
-
-function confirmItem(e) {
+const confirmItem = e => {
     const confirmItem = tasks.find(item =>
         item.text === e.target.parentNode.textContent);
     confirmItem.done = e.target.checked
