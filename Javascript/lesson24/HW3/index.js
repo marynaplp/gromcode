@@ -53,11 +53,15 @@ function addNewTask() {
     const addTaskInput = document.querySelector('.task-input');
 
     if (!addTaskInput.value) return false;
-    tasks.unshift({
+    tasks.push({
+        text: addTaskInput.value,
+        done: false
+    });
+    task.unshift({
         text: addTaskInput.value,
         done: false,
         dateStart: new Date(),
-        dateEnd: undefined,
+        dateEnd: undefined
     });
     addTaskInput.value = "";
 
@@ -73,9 +77,10 @@ function checkItem(e) {
         item.text === e.target.parentNode.textContent);
     checkItem.done = e.target.checked;
     checkItem.dateEnd = checkItem.done ? new Date() : undefined
+
     console.log(checkItem.checked);
     console.log(checkItem.done);
 
     renderListItems(tasks);
 };
-taskConfirm.addEventListener('click', confirmItem);
+taskConfirm.addEventListener('click', checkItem;
