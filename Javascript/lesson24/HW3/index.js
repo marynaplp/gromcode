@@ -25,18 +25,14 @@ const renderListItems = listItems => {
     listElem.innerHTML = "";
 
     const listItemsElems = listItems
-
         .sort((a, b) => {
             if (a.done - b.done !== 0) {
-                return a.done - b.done;
+                return a.done - b.done
             };
-
             if (a.done) {
-                return new Date(b.dateEnd) - new Date(a.dateEnd);
-            } else {
-                return new Date(b.dateEnd) - new Date(a.dateStart)
-            };
-
+                return new Date(b.DateEnd) - new Date(a.dateEnd);
+            }
+            return new Date(b.dateStart) - new Date(a.dateStart);
         })
         .map(({
             text,
@@ -65,15 +61,12 @@ function addNewTask() {
     const addTaskInput = document.querySelector('.task-input');
 
     if (!addTaskInput.value) return false;
-    tasks.push({
-        text: addTaskInput.value,
-        done: false
-    });
-    task.unshift({
+    tasks.unshift({
         text: addTaskInput.value,
         done: false,
-        dateStart: new Date(),
+        dateStart: new Data(),
         dateEnd: undefined
+
     });
     addTaskInput.value = "";
 
@@ -84,15 +77,15 @@ btn.addEventListener('click', addNewTask);
 
 const taskConfirm = document.querySelector('.list');
 
-function checkItem(e) {
-    const checkItem = tasks.find(item =>
+function confirmTask(e) {
+    const confirmTask = tasks.find(item =>
         item.text === e.target.parentNode.textContent);
-    checkItem.done = e.target.checked;
-    checkItem.dateEnd = checkItem.done ? new Date() : undefined
+    confirmTask.done = e.target.checked;
+    confirmTask.dateEnd = confirmTask.done ? new Date() : undefined
 
-    console.log(checkItem.checked);
-    console.log(checkItem.done);
+    console.log(confirmTask.checked);
+    console.log(confirmTask.done);
 
     renderListItems(tasks);
 };
-taskConfirm.addEventListener('click', checkItem)
+taskConfirm.addEventListener('click', confirmTask);
