@@ -1,7 +1,7 @@
 const students = [
-    { name: 'Tom', birthday: '01/15/2010' },
-    { name: 'Ben', birthday: '01/17/2008' },
-    { name: 'Sam', birthday: '03/15/2010' },
+    { name: 'Tom', birthDay: '01/15/2010' },
+    { name: 'Ben', birthDay: '01/17/2008' },
+    { name: 'Sam', birthDay: '03/15/2010' },
 ]
 
 const studentsBirthDays = students => {
@@ -11,9 +11,9 @@ const studentsBirthDays = students => {
     const sortedStudents = students.sort((a, b) => new Date(a.birthDay).getDate() - new Date(b.birthDay).getDate())
     const newArray = sortedStudents.reduce((acc, {
         name,
-        birthday
+        birthDay
     }) => {
-        const nameMonth = months[new Date(birthday).getMonth()];
+        const nameMonth = months[new Date(birthDay).getMonth()];
         return {...acc, [nameMonth]: acc[nameMonth] ? acc[nameMonth].concat(name) : [name] }
 
     }, {});
