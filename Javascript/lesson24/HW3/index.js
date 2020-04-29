@@ -54,6 +54,20 @@ const renderListItems = listItems => {
     listElem.append(...listItemsElems);
 };
 renderListItems(tasks);
+const taskConfirm = document.querySelector('.list');
+
+function confirmTask(e) {
+    const confirmTask = tasks.find(item =>
+        item.text === e.target.parentNode.textContent);
+    confirmTask.done = e.target.checked;
+    confirmTask.dateEnd = confirmTask.done ? new Date() : undefined
+
+    console.log(confirmTask.checked);
+    console.log(confirmTask.done);
+
+    renderListItems(tasks);
+};
+taskConfirm.addEventListener('click', confirmTask);
 
 const btn = document.querySelector('.create-task-btn');
 
@@ -74,18 +88,3 @@ function addNewTask() {
 
 }
 btn.addEventListener('click', addNewTask);
-
-const taskConfirm = document.querySelector('.list');
-
-function confirmTask(e) {
-    const confirmTask = tasks.find(item =>
-        item.text === e.target.parentNode.textContent);
-    confirmTask.done = e.target.checked;
-    confirmTask.dateEnd = confirmTask.done ? new Date() : undefined
-
-    console.log(confirmTask.checked);
-    console.log(confirmTask.done);
-
-    renderListItems(tasks);
-};
-taskConfirm.addEventListener('click', confirmTask);
