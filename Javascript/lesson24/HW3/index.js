@@ -31,9 +31,8 @@ const renderListItems = listItems => {
             };
             if (a.done) {
                 return new Date(b.dateEnd) - new Date(a.dateEnd);
-            } else {
-                return new Date(b.dateStart) - new Date(a.dateStart);
             }
+            return new Date(b.dateStart) - new Date(a.dateStart);
         })
         .map(({
             text,
@@ -57,7 +56,7 @@ const renderListItems = listItems => {
 renderListItems(tasks);
 const taskConfirm = document.querySelector('.list');
 
-const checkTask = (e) => {
+function checkTask(e) {
     const checkTask = tasks.find(item =>
         item.text === e.target.parentNode.textContent);
     checkTask.done = e.target.checked;
@@ -67,3 +66,19 @@ const checkTask = (e) => {
     renderListItems(tasks);
 };
 taskConfirm.addEventListener('click', checkTask);
+
+const btn = document.querySelector('.create-task-btn');
+const addNewTask = () => {
+    const createInput = document.querySelector('.task-input');
+    if (!createInput.value) return false;
+    tasks.unshift({
+        text: createInput.value,
+        done: false,
+        dateStart: new Date(),
+        dateEnd: undefined
+    });
+    createInput.value = '';
+
+    renderListItems(tasks);
+}
+btn.addEventListener('click', addNewTask);
