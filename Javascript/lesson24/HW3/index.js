@@ -27,12 +27,12 @@ const renderListItems = listItems => {
     const listItemsElems = listItems
         .sort((a, b) => {
             if (a.done - b.done !== 0) {
-                return a.done - b.done
+                return a.done - b.done;
             };
             if (a.done) {
-                return new Date(b.DateEnd) - new Date(a.dateEnd);
+                return new Date(b.dateEnd) - new Date(a.dateEnd);
             }
-            return new Date(b.dateStart) - new Date(a.dateStart)
+            return new Date(b.dateStart) - new Date(a.dateStart);
         })
         .map(({
             text,
