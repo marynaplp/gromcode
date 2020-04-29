@@ -60,7 +60,7 @@ function confirmTask(e) {
     const confirmTask = tasks.find(item =>
         item.text === e.target.parentNode.textContent);
     confirmTask.done = e.target.checked;
-    confirmTask.dateEnd = confirmTask.done ? new Date() : undefined
+    confirmTask.dateEnd = confirmTask.done ? new Date() : undefined;
 
     console.log(confirmTask.checked);
     console.log(confirmTask.done);
@@ -70,21 +70,17 @@ function confirmTask(e) {
 taskConfirm.addEventListener('click', confirmTask);
 
 const btn = document.querySelector('.create-task-btn');
-
-function addNewTask() {
-    const addTaskInput = document.querySelector('.task-input');
-
-    if (!addTaskInput.value) return false;
+const addNewTask = () => {
+    const createInput = document.querySelector('.task-input');
+    if (!createInput.value) return false;
     tasks.unshift({
-        text: addTaskInput.value,
+        text: createInput.value,
         done: false,
-        dateStart: new Data(),
-        dateEnd: new Date(),
-
+        dateStart: new Date(),
+        dateEnd: undefined
     });
-    addTaskInput.value = "";
+    createInput.value = '';
 
-    renderListItems(tasks)
-
+    renderListItems(tasks);
 }
 btn.addEventListener('click', addNewTask);
