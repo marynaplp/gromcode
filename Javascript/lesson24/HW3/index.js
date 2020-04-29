@@ -30,9 +30,10 @@ const renderListItems = listItems => {
                 return a.done - b.done;
             };
             if (a.done) {
-                return new Date(b.dateEnd).getDate() - new Date(a.dateEnd).getDate();
+                return new Date(b.dateEnd) - new Date(a.dateEnd);
+            } else {
+                return new Date(b.dateStart) - new Date(a.dateStart);
             }
-            return new Date(b.dateStart).getDate() - new Date(a.dateStart).getDate();
         })
         .map(({
             text,
