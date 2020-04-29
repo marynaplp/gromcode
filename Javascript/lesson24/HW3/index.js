@@ -65,7 +65,7 @@ function addNewTask() {
         text: addTaskInput.value,
         done: false,
         dateStart: new Data(),
-        dateEnd: undefined,
+        dateEnd: new Date(),
 
     });
     addTaskInput.value = "";
