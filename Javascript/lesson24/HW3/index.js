@@ -62,8 +62,6 @@ function confirmTask(e) {
     confirmTask.done = e.target.checked;
     confirmTask.dateEnd = confirmTask.done ? new Date() : undefined;
 
-    console.log(confirmTask.checked);
-    console.log(confirmTask.done);
 
     renderListItems(tasks);
 };
