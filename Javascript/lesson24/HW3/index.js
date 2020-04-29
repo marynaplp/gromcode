@@ -66,8 +66,8 @@ function addNewTask() {
         done: false
     });
     task.unshift({
-        text: addTaskInput.value,
-        done: false,
+        //  text: addTaskInput.value,
+        //  done: false,
         dateStart: new Date(),
         dateEnd: undefined
     });
