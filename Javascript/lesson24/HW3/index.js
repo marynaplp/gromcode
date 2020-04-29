@@ -63,7 +63,7 @@ const addNewTask = () => {
         text: createTaskInput.value,
         done: false,
         dateStart: new Date(),
-        dateEnd: undefined
+        dateEnd: new Date(),
     });
     createTaskInput.value = '';
 
