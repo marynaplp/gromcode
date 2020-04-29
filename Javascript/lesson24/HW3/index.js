@@ -54,6 +54,23 @@ const renderListItems = listItems => {
     listElem.append(...listItemsElems);
 };
 renderListItems(tasks);
+
+const btn = document.querySelector('.create-task-btn');
+const addNewTask = () => {
+    const createTaskInput = document.querySelector('.task-input');
+    if (!createTaskInput.value) return false;
+    tasks.unshift({
+        text: createTaskInput.value,
+        done: false,
+        dateStart: new Date(),
+        dateEnd: undefined
+    });
+    createTaskInput.value = '';
+
+    renderListItems(tasks);
+}
+btn.addEventListener('click', addNewTask);
+
 const taskConfirm = document.querySelector('.list');
 
 function checkTask(e) {
@@ -61,24 +78,6 @@ function checkTask(e) {
         item.text === e.target.parentNode.textContent);
     checkTask.done = e.target.checked;
     checkTask.dateEnd = checkTask.done ? new Date() : undefined;
-
-
     renderListItems(tasks);
 };
 taskConfirm.addEventListener('click', checkTask);
-
-const btn = document.querySelector('.create-task-btn');
-const addNewTask = () => {
-    const createInput = document.querySelector('.task-input');
-    if (!createInput.value) return false;
-    tasks.unshift({
-        text: createInput.value,
-        done: false,
-        dateStart: new Date(),
-        dateEnd: undefined
-    });
-    createInput.value = '';
-
-    renderListItems(tasks);
-}
-btn.addEventListener('click', addNewTask);
