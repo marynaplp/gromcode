@@ -14,7 +14,7 @@ const studentsBirthDays = students => {
         birthday
     }) => {
         const nameMonth = months[new Date(birthday).getMonth()];
-        return { acc, [nameMonth]: acc[nameMonth] ? acc[nameMonth].concat(name) : [name] }
+        return {...acc, [nameMonth]: acc[nameMonth] ? acc[nameMonth].concat(name) : [name] }
 
     }, {});
 
@@ -22,6 +22,6 @@ const studentsBirthDays = students => {
     return newArray
 }
 console.log(studentsBirthDays(students))
-    //export {
-    //  studentsBirthDays
-    //}
+export {
+    studentsBirthDays
+}
