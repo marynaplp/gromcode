@@ -54,13 +54,14 @@ const renderListItems = listItems => {
     listElem.append(...listItemsElems);
 };
 renderListItems(tasks);
+
 const taskConfirm = document.querySelector('.list');
 
-function confirmTask(e) {
-    const confirmTask = tasks.find(item =>
+const checkTask = (e) => {
+    const checkTask = tasks.find(item =>
         item.text === e.target.parentNode.textContent);
-    confirmTask.done = e.target.checked;
-    confirmTask.dateEnd = confirmTask.done ? new Date() : undefined;
+    checkTask.done = e.target.checked;
+    checkTask.dateEnd = checkTask.done ? new Date() : undefined;
 
 
     renderListItems(tasks);
