@@ -25,7 +25,15 @@ const renderListItems = listItems => {
     listElem.innerHTML = "";
 
     const listItemsElems = listItems
-        .sort((a, b) => a.done - b.done)
+
+        .sort((a, b) => {
+            if (a.done) {
+                return new Date(b.dateEnd) - new Date(a.dateEnd);
+            } else {
+                return new Date(b.dateEnd) - new Date(a.dateStart)
+            };
+
+        })
         .map(({
             text,
             done
@@ -83,4 +91,4 @@ function checkItem(e) {
 
     renderListItems(tasks);
 };
-taskConfirm.addEventListener('click', checkItem;
+taskConfirm.addEventListener('click', checkItem)
