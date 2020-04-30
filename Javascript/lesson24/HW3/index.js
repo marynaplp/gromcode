@@ -74,7 +74,7 @@ const addToList = () => {
     const createTaskInput = document.querySelector('.task-input');
     if (!createTaskInput.value) return false;
     tasks.unshift({
-        text: createInp.value,
+        text: createTaskInput.value,
         done: false,
         dateStart: new Date(),
         dateEnd: undefined
