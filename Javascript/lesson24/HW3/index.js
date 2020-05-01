@@ -50,6 +50,7 @@ const renderListItems = listItems => {
             text,
             done
         }) => {
+            console.log(text, done);
             const listItemElem = document.createElement('li');
             listItemElem.classList.add('list__item');
             if (done) {
