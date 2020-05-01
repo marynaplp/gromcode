@@ -4,7 +4,7 @@
 
 
  const getLocalStorageData = () => {
-     return Objsct.entries(localStorage)
+     return Object.entries(localStorage)
          .reduce((acc, [key, value]) => {
              return {
                  ...acc,
