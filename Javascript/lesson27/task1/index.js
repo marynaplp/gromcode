@@ -4,7 +4,7 @@
  console.log(JSON.parse(localStorage.getItem('hobbies')));
 
 
- const getLocalStorageDate = () => {
+ const getLocalStorageData = () => {
      return Objsct.entries(localStorage)
          .reduce((acc, [key, value]) => {
              return {
@@ -18,4 +18,4 @@
 
 
  console.log(getLocalStorageData());
- export { getLocalStorageDate }
+ export { getLocalStorageData }
