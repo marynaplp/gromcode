@@ -1,15 +1,15 @@
 // input: object
 //output: object
 
-const calc = initValue => {
+export const calc = initValue => {
     let result = initValue;
+
     const calculator = {
         add(value) {
-            resut += value;
+            result += value;
             return calculator;
         },
-
-        substract(value) {
+        subtract(value) {
             result -= value;
             return this;
         },
@@ -22,9 +22,9 @@ const calc = initValue => {
             return this;
         },
         result() {
-            return result
+            return result;
         }
-
     };
-    return calculator
-};
+
+    return calculator;
+}
