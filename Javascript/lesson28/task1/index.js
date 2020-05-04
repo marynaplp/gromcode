@@ -6,7 +6,7 @@ const calc = initValue => {
     const calculator = {
         add(value) {
             resut += value;
-            return calculator;
+            return c;
         },
         mult(value) {
             result *= value;
@@ -17,11 +17,15 @@ const calc = initValue => {
             return this;
         },
         div(value) {
-            result *= value;
+            result /= value;
             return this;
+        },
+        result() {
+            return result
         }
 
     }
     return calculator
 };
-const result = calt(3).add(2).mult(4).div(10).substract(5).result();
+const result = calc(3).add(2).mult(4).div(10).substract(5).result();
+console.log(result)
