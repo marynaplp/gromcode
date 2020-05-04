@@ -2,7 +2,7 @@
 //output: object
 
 const calc = initValue => {
-    let result;
+    let result = initValue;
     const calculator = {
         add(value) {
             resut += value;
