@@ -6,7 +6,7 @@ const calc = initValue => {
     const calculator = {
         add(value) {
             resut += value;
-            return this;
+            return calculator;
         },
 
         substract(value) {
