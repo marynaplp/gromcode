@@ -6,14 +6,15 @@ const calc = initValue => {
     const calculator = {
         add(value) {
             resut += value;
-            return c;
+            return this;
+        },
+
+        substract(value) {
+            result -= value;
+            return this;
         },
         mult(value) {
             result *= value;
-            return this;
-        },
-        substract(value) {
-            result -= value;
             return this;
         },
         div(value) {
