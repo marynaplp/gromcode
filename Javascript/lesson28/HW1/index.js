@@ -5,25 +5,25 @@ export const shmoment = (date) => {
         add(unit, value) {
             switch (unit) {
                 case "years":
-                    result.setFullYear(res.getFullYear() + value);
+                    result.setFullYear(result.getFullYear() + value);
                     return this;
                 case "months":
-                    result.setMonth(res.getMonth() + value);
+                    result.setMonth(result.getMonth() + value);
                     return this;
                 case "days":
-                    result.setDate(res.getDate() + value);
+                    result.setDate(result.getDate() + value);
                     return this;
                 case "hours":
-                    result.setHours(res.getHours() + value);
+                    result.setHours(result.getHours() + value);
                     return this;
                 case "minutes":
-                    result.setMinutes(res.getMinutes() + value);
+                    result.setMinutes(result.getMinutes() + value);
                     return this;
                 case "seconds":
-                    result.setSeconds(res.getSeconds() + value);
+                    result.setSeconds(result.getSeconds() + value);
                     return this;
                 case "milliseconds":
-                    result.setMilliseconds(res.getMilliseconds() + value);
+                    result.setMilliseconds(result.getMilliseconds() + value);
                     return this;
                 default:
                     return `Incorect unit of time`;
@@ -31,31 +31,31 @@ export const shmoment = (date) => {
         },
         subtract(unit, value) {
             if (unit === "years") {
-                result.setFullYear(res.getFullYear() - value);
+                result.setFullYear(result.getFullYear() - value);
                 return this;
             }
             if (unit === "months") {
-                result.setMonth(res.getMonth() - value);
+                result.setMonth(result.getMonth() - value);
                 return this;
             }
             if (unit === "days") {
-                result.setDate(res.getDate() - value);
+                result.setDate(result.getDate() - value);
                 return this;
             }
             if (unit === "hours") {
-                result.setHours(res.getHours() - value);
+                result.setHours(result.getHours() - value);
                 return this;
             }
             if (unit === "minutes") {
-                result.setMinutes(res.getMinutes() - value);
+                result.setMinutes(result.getMinutes() - value);
                 return this;
             }
             if (unit === "seconds") {
-                result.setSeconds(res.getSeconds() - value);
+                result.setSeconds(result.getSeconds() - value);
                 return this;
             }
             if (unit === "milliseconds") {
-                result.setMilliseconds(res.getMilliseconds() - value);
+                result.setMilliseconds(result.getMilliseconds() - value);
                 return this;
             } else return `Incorect unit of time`;
         },
