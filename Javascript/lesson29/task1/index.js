@@ -24,6 +24,7 @@ export const addImage = (imgSrc, callback) => {
 
     imgElem.addEventListener('error', () => callback('Image load failed'))
 };
+
 const imgSrc = 'https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson21/task2/nature.jpeg';
 
 const onImageLoaded = (error, data) => {
@@ -36,9 +37,10 @@ const onImageLoaded = (error, data) => {
         height
     } = data;
     const sizeElem = document.querySelector('.image-size');
-    sizeElem.textContent = `${width} x ${height}`;
+    sizeElem.textContent = `${width}: x ${height}`;
 };
 
 addImage(imgSrc, onImageLoaded);
+
 
 /// add sizes into the span
