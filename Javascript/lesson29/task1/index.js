@@ -13,7 +13,7 @@ export const addImage = (imgSrc, callback) => {
     };
     imgElem.addEventListener('load', onImageLoaded)
 
-    imgElem.addEventListener('error', () => callback('Imagr load failed'))
+    imgElem.addEventListener('error', () => callback('Image load failed'))
 
 
 
