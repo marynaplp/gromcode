@@ -13,4 +13,4 @@ const pinger = (num, period) => {
 }
 pinger(5, 1000)
 
-//export { pinger }
+export { pinger }
