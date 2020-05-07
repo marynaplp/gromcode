@@ -5,3 +5,5 @@ const pinger = (num, period) => {
     console.log(interval);
 }
 pinger(5, 1000)
+
+export { pinger }
