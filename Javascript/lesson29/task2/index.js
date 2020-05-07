@@ -1,8 +1,15 @@
 const pinger = (num, period) => {
+    let i = num;
+    console.log('Ping');
     const interval = setInterval(() => {
-        console.log('Ping');
+
+        if (--i > 0) {
+            console.log('Ping');
+        } else {
+            clearInterval(interval);
+        }
     }, period);
-    console.log(interval);
+
 }
 pinger(5, 1000)
 
