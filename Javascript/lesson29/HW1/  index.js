@@ -11,3 +11,6 @@ const requestUserData = (userId, callback) => {
     };
     callback = (object);
 }
+export {
+    requestUserData
+}
