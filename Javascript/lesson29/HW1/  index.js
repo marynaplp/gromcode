@@ -1,19 +1,21 @@
-const requestUserData = (userId, callback) => {
-    let object = {
-        name: 'John',
-        age: 17,
-        userId,
-        email: `${userId}@example.com`,
-    };
-    setTimeout(() => {
-        if (userId == 'broken') {
-            callback(null, 'Failed to load user data');
-            return;
-        }
-        callback(object);
-    }, Math.floor(Math.random() * 3 + 1) * 1000);
+const getRandomDelay = (min, max) => {
+    return Math.random() * (max - min);
 }
+export const requestUserData = (userId, callback) => {
+    const randomDelay = getRandomDelay(1000, 3000);
 
-export {
-    requestUserData
+    if (userId == 'broken') {
+        setTimeout(() => {
+            callback(null, 'Failed to load user data');
+        }, randomDelay);
+    } else {
+        setTimeout(() => {
+                callback({
+                    userId,
+                    email: `${userId}@example.com`,
+                }),
+            },
+            randomDelay);
+    }
+
 }
