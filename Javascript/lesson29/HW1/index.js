@@ -1,6 +1,6 @@
 const getRandomDelay = (from, to) => from + Math.random() * (from - to);
 const requestUserData = (userId, callback) => {
-    const randomDelay = getRandomDelay(1000, 3000);
+    const randomDelay = getRandomDelay(1, 3);
     if (userId === "broken") {
         setTimeout(() => {
             callback(null, "Failed to load user data");
