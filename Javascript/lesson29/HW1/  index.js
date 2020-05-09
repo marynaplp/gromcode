@@ -1,10 +1,7 @@
-const getRandomDelay = (min, max) => {
-    return Math.random() * (max - min);
-}
+const getRandomDelay = (min, max) => from + Math.random() * (max - min);
 const requestUserData = (userId, callback) => {
     const randomDelay = getRandomDelay(1000, 3000);
-
-    if (userId == "broken") {
+    if (userId === "broken") {
         setTimeout(() => {
             callback(null, "Failed to load user data");
         }, randomDelay);
@@ -17,5 +14,4 @@ const requestUserData = (userId, callback) => {
         }, randomDelay);
     }
 };
-
-export { requestUserData }
+export { requestUserData };
