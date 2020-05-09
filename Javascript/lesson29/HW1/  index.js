@@ -1,7 +1,7 @@
-const getRandomDelay = (min, max) => {
-    return Math.random() * (max - min);
+const getRandomDelay = (from, to) => {
+    return Math.random() * (to - from);
 }
-export const requestUserData = (userId, callback) => {
+const requestUserData = (userId, callback) => {
     const randomDelay = getRandomDelay(1000, 3000);
 
     if (userId == "broken") {
@@ -17,3 +17,5 @@ export const requestUserData = (userId, callback) => {
         }, randomDelay);
     }
 };
+
+export { requestUserData }
