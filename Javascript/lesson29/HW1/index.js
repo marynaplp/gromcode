@@ -1,4 +1,4 @@
-const getRandomDelay = (from, to) => from + Math.random() * (from - to);
+const getRandomDelay = (from, to) => from + Math.random() * (to - from);
 const requestUserData = (userId, callback) => {
     const randomDelay = getRandomDelay(1, 3);
     if (userId === "broken") {
