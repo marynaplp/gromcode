@@ -1,5 +1,5 @@
-const getRandomDelay = (from, to) => {
-    return Math.random() * (to - from);
+const getRandomDelay = (min, max) => {
+    return Math.random() * (max - min);
 }
 const requestUserData = (userId, callback) => {
     const randomDelay = getRandomDelay(1000, 3000);
