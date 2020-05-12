@@ -38,6 +38,6 @@ console.log(result);
 //  sizeElem.textContent = `${width} x ${height}`;
 //};
 
-//export {
-//  addImage
-//};
+export {
+    addImage
+};
