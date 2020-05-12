@@ -34,7 +34,7 @@ userDataPromise
  */
 
 userDataPromise
-    .then(function onSuccess( /* ...code here */ ) {
+    .then(function onSuccess(userData /* ...code here */ ) {
         /* ...code here */
         console.log(`My name is ${userData.name}. I am ${userData.age} years old`);
     });
