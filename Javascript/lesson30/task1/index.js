@@ -23,6 +23,8 @@ const addImage = imgSrc => {
     return p;
 };
 const result = addImage(imgSrc);
+result.then(data => console.log(data));
+
 console.log(result);
 
 //function onImageLoaded(error, data) {
