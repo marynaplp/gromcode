@@ -22,6 +22,8 @@ caddoImageWithPromise = imgSrc => {
     })
     return p;
 };
+const result = addImageWithpromise(imgSrc);
+console.log(result);
 
 //function onImageLoaded(error, data) {
 // if (error) {
