@@ -1,4 +1,4 @@
-caddoImageWithPromise = imgSrc => {
+const addImagee = imgSrc => {
     const p = new Promise((resolveCb, rejectCb) => {
         const imgElem = document.createElement('img');
         imgElem.setAttribute('alt', 'My Photo');
@@ -22,7 +22,7 @@ caddoImageWithPromise = imgSrc => {
     })
     return p;
 };
-const result = addImageWithpromise(imgSrc);
+const result = addImage(imgSrc);
 console.log(result);
 
 //function onImageLoaded(error, data) {
