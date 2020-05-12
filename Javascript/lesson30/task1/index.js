@@ -1,5 +1,5 @@
 const addImage = imgSrc => {
-    const p = new Promise((resolveCb, rejectCb) => {
+    const p = new Promise((resolve, reject) => {
         const imgElem = document.createElement('img');
         imgElem.setAttribute('alt', 'My Photo');
         imgElem.src = imgSrc;
@@ -11,14 +11,14 @@ const addImage = imgSrc => {
                 width,
                 height
             } = imgElem;
-            resolveCb({
+            resolve({
                 width,
                 height
             });
         };
 
         imgElem.addEventListener('load', onImageLoaded);
-        imgElem.addEventListener('error', () => rejectCb('Image load failed'));
+        imgElem.addEventListener('error', () => reject('Image load failed'));
     })
     return p;
 };
