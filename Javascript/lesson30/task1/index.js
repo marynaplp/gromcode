@@ -1,5 +1,5 @@
 const addImage = imgSrc => {
-    const p = new Promise((resolve, reject) => {
+    const p = new Promise((resolveCb, rejectCb) => {
         const imgElem = document.createElement('img');
         imgElem.setAttribute('alt', 'My Photo');
         imgElem.src = imgSrc;
@@ -12,22 +12,29 @@ const addImage = imgSrc => {
                 width,
                 height
             } = imgElem;
-            resolve({
+            resolveCb({
                 width,
                 height
             });
         };
 
         imgElem.addEventListener('load', onImageLoaded);
-        imgElem.addEventListener('error', () => reject('Image load failed'));
-    })
+
+        imgElem.addEventListener('error', () => rejectCb(new Error('Image load failed')))
+    });
     return p;
 };
+
 const imgSrc = 'https://server.com/image.png';
-const result = addImage(imgSrc);
+
+const resultPromise = addImage(imgSrc);
+
 resultPromise.catch(error => console.log(error));
 
-console.log(result);
+
+export {
+    addImage
+};
 
 //function onImageLoaded(error, data) {
 // if (error) {
@@ -41,7 +48,3 @@ console.log(result);
 //const sizeElem = document.querySelector('.image-size');
 //  sizeElem.textContent = `${width} x ${height}`;
 //};
-
-export {
-    addImage
-};
