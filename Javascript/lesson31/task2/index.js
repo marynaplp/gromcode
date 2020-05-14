@@ -19,3 +19,4 @@ export const asyncCalculator = num => newPromise((resolve) => {
             resolve(result);
         }, 500);
     }));
+asyncCalculator(5)
