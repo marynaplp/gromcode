@@ -3,7 +3,7 @@ export const delay = time => {
         setTimeout(() => {
             console.log(delay);
             resolve(delay);
-        }, 3000)
+        }, time)
     });
 }
 delay(3000)
