@@ -1,5 +1,5 @@
 const getRandomNumber = (from, to) =>
-    from + Math.random() * (to - from);
+    from + Math.random() * from - to);
 const request = url => newPromise(resolve => {
     const randomDelay = getRandomNumber(1000, 3000)
     setTimeout(() => {
@@ -25,6 +25,7 @@ const getUserASAP = userId => {
 
     const requests = userUrls
         .map(userUrl => request(userUrl))
+
     return Promise.race(requests);
 };
 getUserASAP('user-id-1')
