@@ -3,11 +3,11 @@
     /
 
 /* ...code here */
-const makePromise = (value, delay) => new Promise(resolve => {
+export const makePromise = (value) => new Promise(resolve => {
     setTimeout(() => {
         console.log(value);
         resolve(value);
-    }, delay);
+    }, 0);
 });
 /*
  * пример использования
