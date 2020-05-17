@@ -22,9 +22,14 @@ const servers = [
 const getUserASAP = userId => {
     const userUrls = servers
         .map(serverUrl => `${serverUrl}/users/${userId}`);
+
     const requests = userUrls
-        .map(userUrl => request(usUrl))
+        .map(userUrl => request(userUrl))
     return Promise.race(requests);
 };
 getUserASAP('user-id-1')
     .then(res => console.log(res))
+
+export {
+    getUserASAP
+}
