@@ -7,23 +7,35 @@ import {
 } from './storage.js';
 
 export const onCreateTask = () => {
-    const taskTitleInputElem = document.querySelector('.task-input');
+        const taskTitleInputElem = document.querySelector('.task-input'); // c
 
-    const text = taskTitleInputElem.value;
+        const text = taskTitleInputElem.value;
 
-    if (!text) {
-        return;
+        if (!text) {
+            return;
+        }
+        taskTitleInputElem.value = '';
+        const tasksList = getItem('tasksList') || [];
+
+        const newTask = {
+            text,
+            done: false,
+            createDate: new Date().toISOString(),
+            id: Math.random().toString()
+        };
+        createTask(newTask)
+            .then(() => getTasksList())
+            .then(newTasksList => {
+                setItem('tasksList', newTasksList); // save in local storage 
+                renderTasks();
+            })
+            // const newTasksList = tasksList.concat();
+            // setItem('tasksList', newTasksList);
+
+        // renderTasks(); // renew list
     }
-    taskTitleInputElem.value = '';
-    const tasksList = getItem('tasksList') || [];
-
-    const newTasksList = tasksList.concat({
-        text,
-        done: false,
-        createDate: new Date().toISOString(),
-        id: Math.random().toString()
-    });
-    setItem('tasksList', newTasksList);
-
-    renderTasks();
-}
+    // 1.Prepare data
+    //2.Write data to database
+    //3.Read new data from server
+    //4.Save new Data to front-end storage
+    //5.Update UI based on new data
