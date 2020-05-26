@@ -1,9 +1,21 @@
-const baseUrl = 'https://crudcrud.com/api/04a3ae00841d4b15abbef2e19432f814/tasks';
+const baseUrl = 'https://5ecd23db7c528e00167cd104.mockapi.io/tasks';
+
+const mapTasks = tasks =>
+    tasks.map(({
+        _id,
+        ...rest
+    }) => ({
+        ...rest,
+        id: _id
+    }))
+
 
 export const getTasksList = () => {
-    return fetch('https://crudcrud.com/api/04a3ae00841d4b15abbef2e19432f814/tasks')
+    return fetch(baseUrl)
         .then(response => response.json())
-}
+        .then(tasks => mapTasks(tasks))
+};
+
 export const createTask = taskData => {
     returnfetch(baseUrl, {
         method: 'POST',
