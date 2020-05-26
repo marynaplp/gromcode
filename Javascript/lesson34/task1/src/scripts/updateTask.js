@@ -1,5 +1,19 @@
 import { renderTasks } from './renderer.js';
 import { getItem, setItem } from './storage.js';
+import { updateTask, getTasksList, deleteTask } from './tasksGateway.js';
+
+
+export const onListClick = e => {
+    const check = e.target.classList.contains('list-item__checkbox');
+
+    const del = e.target.classList.contains('list-item__delete-btn');
+    if (del) {
+        onDeleteTask(e)
+    }
+    if (check) {
+        onToggleTask(e)
+    }
+}
 
 export const onToggleTask = e => {
     const isCheckbox = e.target.classList.contains('list-item__checkbox')
@@ -35,16 +49,4 @@ export const onToggleTask = e => {
             setItem('tasksList', newTasksList);
             renderTasks();
         });
-};
-
-export const onListClick = e => {
-    const checkboxItem = e.target.classList.contains('list-item__checkbox');
-    const deleteItem = e.target.classList.contains('list-item__delete-btn');
-
-    if (deleteItem) {
-        onDeleteTask(e)
-    }
-    if (checkboxItem) {
-        onToggleTask(e)
-    }
 };
