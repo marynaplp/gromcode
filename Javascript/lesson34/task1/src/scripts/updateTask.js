@@ -1,10 +1,5 @@
-import {
-    renderTasks
-} from './renderer.js';
-import {
-    getItem,
-    setItem
-} from './storage.js';
+import { renderTasks } from './renderer.js';
+import { getItem, setItem } from './storage.js';
 
 export const onToggleTask = e => {
     const isCheckbox = e.target.classList.contains('list-item__checkbox')
@@ -26,7 +21,6 @@ export const onToggleTask = e => {
             new Date().toISOString() : null
     };
 
-    const updatedTask = {};
     updateTask(taskId, updatedTask)
         .then(() => getTasksList())
         .then(newTasksList => {
@@ -34,19 +28,23 @@ export const onToggleTask = e => {
             renderTasks();
         })
 
-    const newTasksList = tasksList
-        .map(task => {
-            if (task.id === e.target.dataset.id) {
-                const done = e.target.checked;
-                return {
-                    ...task,
-                    done,
-                    finishDate: done ?
-                        new Date().toISOString() : null
-                };
-            }
-            return task;
+
+    deleteTask(taskId, updatedTask)
+        .then(() => getTasksList())
+        .then(newTasksList => {
+            setItem('tasksList', newTasksList);
+            renderTasks();
         });
-    setItem('tasksList', newTasksList);
-    renderTasks();
-}
+};
+
+export const onListClick = e => {
+    const checkboxItem = e.target.classList.contains('list-item__checkbox');
+    const deleteItem = e.target.classList.contains('list-item__delete-btn');
+
+    if (deleteItem) {
+        onDeleteTask(e)
+    }
+    if (checkboxItem) {
+        onToggleTask(e)
+    }
+};

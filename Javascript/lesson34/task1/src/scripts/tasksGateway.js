@@ -27,7 +27,7 @@ export const createTask = taskData => {
     setItem
 };
 export const updateTask = (taskId, updatedtaskData) => {
-    returnfetch(`baseUrl,/${taskId}`, {
+    returnfetch(`${baseUrl},/${taskId}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json; charset=utf-8'

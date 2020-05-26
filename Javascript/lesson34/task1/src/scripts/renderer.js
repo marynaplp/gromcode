@@ -33,7 +33,7 @@ const createListItem = ({
     id
 }) => {
     const listItemElem = document.createElement('li');
-    listItemElem.classList.add('list-item');
+    listItemElem.classList.add('list-item', 'list__item');
     const checkboxElem = createCheckbox({
         done,
         id
