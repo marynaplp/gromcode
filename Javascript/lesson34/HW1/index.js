@@ -5,16 +5,16 @@ export const getUsersList = () => {
         .then(response => response.json());
 };
 
-export const getUsersById = (userId) => {
+export const getUserById = userId => {
     return fetch(`${baseUrl}/${userId}`)
         .then(response => response.json());
 };
 
-export const createUser = (user) => {
+export const createUser = user => {
     return fetch(baseUrl, {
         method: 'POST',
         headers: {
-            'Content -Type': 'application/json;charser= utf-8'
+            'Content-Type': 'application/json;charser= utf-8'
         },
         body: JSON.stringify(user)
 
@@ -25,7 +25,7 @@ export const updateUser = (id, updatedUserData) => {
     return fetch(`${baseUrl}/${id}`, {
         method: 'PUT',
         headers: {
-            'Content -Type': 'application/json;charser= utf-8'
+            'Content-Type': 'application/json;charser= utf-8'
         },
         body: JSON.stringify(updatedUserData)
 
@@ -33,7 +33,7 @@ export const updateUser = (id, updatedUserData) => {
 
 }
 
-export const deleteUser = (id) => {
+export const deleteUser = id => {
     return fetch(`${baseUrl}/${id}`, {
         method: 'DELETE',
     });
