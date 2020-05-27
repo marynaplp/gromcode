@@ -1,4 +1,4 @@
-const baseUrL = "https://5ecedb5261c8480016701a8f.mockapi.io/api/v1/users"
+const baseUrl = "https://5ecedb5261c8480016701a8f.mockapi.io/api/v1/users"
 
 export const getUsersList = () => {
     return fetch(baseUrl)
