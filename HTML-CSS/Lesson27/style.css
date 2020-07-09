@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  font-family: Montserrat;
+}
+
+.price-card {
+  flex-direction: row;
+  width: 380px;
+  height: 770px;
+  background: #334247;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.087466);
+  margin-right: 18px;
+  position: relative;
+  overflow: hidden;
+}
+.price-card__title {
+  margin: auto;
+  color: white;
+  font-style: 700;
+  text-align: center;
+  font-size: 35px;
+  padding-top: 33px;
+}
+.price-card__subtitle {
+  font-weight: 300;
+  font-size: 15px;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+}
+.price-card__btn {
+  background: #5BB189;
+  border-radius: 20px;
+  width: 154px;
+  height: 40px;
+  margin-left: 112px;
+  margin-top: 39px;
+  border: none;
+  color: white;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+}
+.price-card__price {
+  text-align: center;
+  background: #5BB189;
+  color: #FFFFFF;
+  font-size: 55px;
+}
+.price-card .second {
+  background: #3A6BA5;
+}
+.price-card .third {
+  background: #EC632A;
+}
+.price-card__description {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-left: 26px;
+  padding-bottom: 40px;
+}
+.price-card__list {
+  font-family: Montserrat;
+  list-style-type: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.price-card__list-item {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-item: center;
+  line-height: 18px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.price-card__list-item:nth-child(odd) {
+  background: #2A3438;
+  mix-blend-mode: normal;
+}
+.price-card__checkmark-symbol_blue, .price-card__checkmark-symbol_green, .price-card__checkmark-symbol_orange {
+  padding-right: 22px;
+  padding-left: 15px;
+}
+
+.popular {
+  position: absolute;
+  top: 31px;
+  left: 264px;
+  background: #DC3F45;
+  color: white;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  height: 25px;
+  width: 147px;
+  text-align: center;
+  transform: rotate(45deg);
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=style.css.map */
