@@ -20,7 +20,26 @@ function validedReport() {
 
     }
 
+
+    const userValue = [...newData]
+    fetch(baseUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8',
+            },
+            body: JSON.stringify(userValue)
+        })
+        .then(response => response.json())
+        .then(data => {
+            input.forEach(elem => elem.value = '');
+            alert(JSON.stringify(data));
+        })
+        .catch(() => {
+            errorText.textContent = 'Failed to create user';
+        });
+
+
 }
 
 
-loginForm.addListener("click", validedReport);
+submitBtn.addEventListener('click', validationUser);
