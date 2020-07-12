@@ -29,12 +29,7 @@ const validationUser = e => {
 
 
     const userValue = [...new FormData(loginForm)]
-    reduce((email, [name, pass]) =>
-        ({
-            ...email,
-            [name]: pass
-        }), {});
-    console.log(userValue)
+        .reduce((email, [name, password]) => ({...email, [name]: password }), {});
 
 
     console.log(userValue);
