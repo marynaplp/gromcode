@@ -5,23 +5,33 @@
 //5. create handler function B that will be trigerred after inputs change
 //6. use reportValidity to validate form
 
-const baseUrl = 'https://5ecedb5261c8480016701a8f.mockapi.io/v1/users'
+const baseUrl = 'https://5ecedb5261c8480016701a8f.mockapi.io/api/v1/loginForm'
 
-const input = document.querySelectorAll('.input');
-const submitButton = document.querySelector('.submit-button');
-const formControl = document.querySelector('.form-control');
+
+const inp = document.querySelectorAll('input');
 const errorText = document.querySelector('.error-text');
-const loginForm = document.querySelector('.login-form')
-
-function validedReport() {
-    if (loginForm.reportValidity()) {
-        submitForm.disabled = false;
-        submitForm.disabled = true;
-
-    }
+const loginForm = document.querySelector('.login-form');
+const submitBtn = document.querySelector('.submit-button');
 
 
-    const userValue = [...newData]
+const reportValidation = () => {
+    if (loginForm.reportValidity())
+        submitBtn.disabled = false;
+    else submitBtn.disabled = true;
+};
+
+
+loginForm.addEventListener('input', reportValidation);
+
+
+const validationUser = e => {
+    e.preventDefault();
+
+
+    const userValue = [...new FormData(loginForm)]
+
+    console.log(userValue);
+
     fetch(baseUrl, {
             method: 'POST',
             headers: {
@@ -31,7 +41,7 @@ function validedReport() {
         })
         .then(response => response.json())
         .then(data => {
-            input.forEach(elem => elem.value = '');
+            inp.forEach(elem => elem.value = '');
             alert(JSON.stringify(data));
         })
         .catch(() => {
