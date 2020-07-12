@@ -25,35 +25,38 @@ loginForm.addEventListener('input', reportValidation);
 
 
 const validationUser = e => {
-        e.preventDefault();
+    e.preventDefault();
 
 
-        const userValue = [...new FormData(loginForm)]
-            .reduce((email[name, password]) => ({...email[name]: password,
-                    {}
-                }); console.log(userValue)
+    const userValue = [...new FormData(loginForm)]
+    reduce((email, [name, pass]) =>
+        ({
+            ...email,
+            [name]: pass
+        }), {});
+    console.log(userValue)
 
 
-                console.log(userValue);
+    console.log(userValue);
 
-                fetch(baseUrl, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json;charset=utf-8',
-                    },
-                    body: JSON.stringify(userValue)
-                })
-                .then(response => response.json())
-                .then(data => {
-                    inp.forEach(elem => elem.value = '');
-                    alert(JSON.stringify(data));
-                })
-                .catch(() => {
-                    errorText.textContent = 'Failed to create user';
-                });
-
-
-            }
+    fetch(baseUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8',
+            },
+            body: JSON.stringify(userValue)
+        })
+        .then(response => response.json())
+        .then(data => {
+            inp.forEach(elem => elem.value = '');
+            alert(JSON.stringify(data));
+        })
+        .catch(() => {
+            errorText.textContent = 'Failed to create user';
+        });
 
 
-        submitBtn.addEventListener('click', validationUser);
+}
+
+
+submitBtn.addEventListener('click', validationUser);
