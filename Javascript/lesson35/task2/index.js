@@ -1,20 +1,22 @@
-const successPromise = Promise.resolve({ name: "Tom" })
+const successRequest = Promise.resolve({
+    name: "Tom"
+});
 
 successRequest
-    .then(data => {
-        console.logo(data);
-        throw new Error('Unexpected error')
+    .then(function onSuccess1(data) {
+        throw new Error('Error with data')
     })
-    .catch(err => {
-        console.error("onError1", error.message)
+    .catch(function onError1(error) {
+        console.error("onError1", error.message);
     })
 
-const failedRequest = Promise.reject(new Error('Something went wrong'));
+
+const failRequest = Promise.reject(new Error("Something went wrong"));
 
 failRequest
     .catch(function onError2(error) {
         console.error("onError2", error.message);
-        throw new Error("Server error")
+        throw new Error('Server error')
     })
     .then(function onSuccess2(data) {
         console.log("onSuccess2", data);
