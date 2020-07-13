@@ -9,7 +9,7 @@ export const renderRepos = reposList => {
         }) => {
             const listElem = document.createElement('li');
             listElem.classList.add('repo-list__item');
-            listElem.textContent = name
+            listElem.textContent = name;
 
             return listElem
         });

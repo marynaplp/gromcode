@@ -13,4 +13,4 @@ export const renderUserData = userData => {
     userLocationElem.textContent = location ?
         `from ${location}` :
         '';
-}
+};
