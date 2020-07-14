@@ -22,7 +22,7 @@ const defaultUser = {
 
 renderUserData(defaultUser)
 
-const showUserBtnElem = document.querySelector('.name-form__btn');
+const showUserBtnElem = document.querySelector('name-form__btn');
 const userNameInputElem = document.querySelector('.name-form__input');
 
 const onSearchUser = () => {
