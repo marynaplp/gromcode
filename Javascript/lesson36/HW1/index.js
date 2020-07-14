@@ -1,6 +1,6 @@
-export const getUsersBlogs = async users => {
+export const getUsersBlogs = async usersData => {
     try {
-        const getUsersData = await users.forEach(users => {
+        const getUsersData = await usersData.forEach(usersData => {
                 fetch(`https://api.github.com/users/${userId}`)
                     .then(response => {
                         if (response.ok) {
