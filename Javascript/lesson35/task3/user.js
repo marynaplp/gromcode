@@ -1,8 +1,9 @@
+const userAvatarElem = document.querySelector('.user__avatar');
 const userNameElem = document.querySelector('.user__name');
 const userLocationElem = document.querySelector('.user__location');
-const userAvatarElem = document.querySelector('.user__avatar');
 
 export const renderUserData = userData => {
+    console.log(userData)
     const {
         avatar_url,
         name,

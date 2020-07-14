@@ -22,7 +22,7 @@ const defaultUser = {
 
 renderUserData(defaultUser)
 
-const showUserBtnElem = document.querySelector('name-form__btn');
+const showUserBtnElem = document.querySelector('.name-form__btn');
 const userNameInputElem = document.querySelector('.name-form__input');
 
 const onSearchUser = () => {
@@ -37,13 +37,12 @@ const onSearchUser = () => {
         .then(url => fetchRepositories(url))
         .then(reposList => {
             renderRepos(reposList);
+            hideSpinner();
         })
         .catch(err => {
             hideSpinner();
             alert(err.message);
-        })
-        .finally(() => {
-            hideSpinner();
         });
-}
+};
+
 showUserBtnElem.addEventListener('click', onSearchUser);
