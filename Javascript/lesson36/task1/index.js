@@ -8,7 +8,7 @@ export const fetchUser = async userId => {
         const userData = await response.json();
         return userData;
     } catch (error) {
-        console.log(error)
+        throw new Error('Failed to fetch user')
     }
 };
 fetchUser('github');
