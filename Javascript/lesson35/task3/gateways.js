@@ -1,3 +1,4 @@
+// запрашиваем пользователя
 export const fetchUserData = userName => {
     return fetch(`http://api.github.com/users/${userName}`)
         .then(response => {

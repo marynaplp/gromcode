@@ -37,7 +37,6 @@ const onSearchUser = () => {
         .then(url => fetchRepositories(url))
         .then(reposList => {
             renderRepos(reposList);
-
         })
         .catch(err => {
             hideSpinner();
