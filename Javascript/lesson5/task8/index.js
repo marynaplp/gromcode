@@ -12,3 +12,4 @@ function compareSums(a, b, c, d) {
     }
 
 }
+console.log(compareSums(2, 4, 5, 6))
