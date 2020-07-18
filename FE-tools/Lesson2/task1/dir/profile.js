@@ -1,4 +1,4 @@
-const printProfile = profileData => {
+const printProfile = function(profileData) {
     const {
         name,
         company
