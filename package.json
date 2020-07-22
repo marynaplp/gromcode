@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/marynaplp/gromcode/issues"
   },
-  "homepage": "https://github.com/marynaplp/gromcode#readme"
+  "homepage": "https://github.com/marynaplp/gromcode#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
 }
