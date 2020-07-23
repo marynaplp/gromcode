@@ -4,4 +4,4 @@ const greetingElem = React.createElement(
     'Hello, React!'
 );
 
-ReactDOM.render(greetingElem, rootElement);;;
+ReactDOM.render(greetingElem, rootElement);
