@@ -16,7 +16,7 @@ const validatorsByField = {.//step 4 когда будет менятся пол
 const validate = (fieldName, value) => {// //step 4 когда будет менятся поле e-mail  нужно сгенеріровать ошибку на основе валидаторов
     const validators = validatorsByField[fieldName];
     return validators
-        .map((validator) => validator(value))
+        .map((validator) => validator(value)) // каждый валидатор запускается со значением onEmailChange, onPasswordChange
         .filter((errorText) => errorText)
         .join(", ");//  ввиде оодной строкі 
 };
